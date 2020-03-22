@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7AC-eG-tk7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="HWt-um-1VP">
+            <objects>
+                <collectionViewController id="7AC-eG-tk7" customClass="CollectionViewController" customModule="stretchyCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="hCi-Ff-eEI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VFq-vl-yWt" customClass="MyLayout" customModule="stretchyCollectionView" customModuleProvider="target">
+                            <size key="itemSize" width="250" height="62"/>
+                            <size key="headerReferenceSize" width="50" height="180"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="E7P-V4-3tp" customClass="CollectionViewCell" customModule="stretchyCollectionView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="180" width="250" height="62"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="62"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlT-qS-OCf">
+                                            <rect key="frame" x="23" y="53" width="219" height="1"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="Cvn-Bm-1Mf"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci9-eJ-7KS">
+                                            <rect key="frame" x="8" y="8" width="234" height="20.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time, Rome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svR-Of-Bho">
+                                            <rect key="frame" x="8" y="33" width="234" height="20.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="svR-Of-Bho" firstAttribute="leading" secondItem="E7P-V4-3tp" secondAttribute="leadingMargin" id="6Sw-tv-L89"/>
+                                    <constraint firstItem="Ci9-eJ-7KS" firstAttribute="trailing" secondItem="E7P-V4-3tp" secondAttribute="trailingMargin" id="Anv-cp-wmh"/>
+                                    <constraint firstItem="svR-Of-Bho" firstAttribute="bottom" secondItem="E7P-V4-3tp" secondAttribute="bottomMargin" constant="-0.5" id="Gfb-Ru-rHF"/>
+                                    <constraint firstItem="XlT-qS-OCf" firstAttribute="top" secondItem="E7P-V4-3tp" secondAttribute="topMargin" constant="-58" id="IQQ-aa-MpH"/>
+                                    <constraint firstItem="XlT-qS-OCf" firstAttribute="leading" secondItem="E7P-V4-3tp" secondAttribute="leadingMargin" constant="15" id="O4l-3s-TTM"/>
+                                    <constraint firstItem="Ci9-eJ-7KS" firstAttribute="top" secondItem="E7P-V4-3tp" secondAttribute="topMargin" id="hYS-O4-2mh"/>
+                                    <constraint firstItem="svR-Of-Bho" firstAttribute="trailing" secondItem="E7P-V4-3tp" secondAttribute="trailingMargin" id="mcM-GU-PLl"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="XlT-qS-OCf" secondAttribute="bottom" id="mhD-nj-aG5"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="XlT-qS-OCf" secondAttribute="trailing" id="tSE-pN-y0Q"/>
+                                    <constraint firstItem="Ci9-eJ-7KS" firstAttribute="leading" secondItem="E7P-V4-3tp" secondAttribute="leadingMargin" id="ybx-6B-F9K"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IQQ-aa-MpH"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="timeAndRome" destination="svR-Of-Bho" id="D35-vY-sWd"/>
+                                    <outlet property="title" destination="Ci9-eJ-7KS" id="vhb-Ld-yTb"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="Header" id="drW-0c-aam" userLabel="HeaderView" customClass="CollectionViewHeader" customModule="stretchyCollectionView" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="6rG-WM-6ab">
+                                    <rect key="frame" x="0.0" y="-210" width="600" height="600"/>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="6rG-WM-6ab" secondAttribute="height" multiplier="1:1" id="DEK-bH-F8k"/>
+                                        <constraint firstAttribute="height" constant="600" id="Nu0-kp-gUC"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portrait" translatesAutoresizingMaskIntoConstraints="NO" id="a1q-t8-aGF">
+                                    <rect key="frame" x="240" y="30" width="120" height="120"/>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="120" id="D28-It-VBb"/>
+                                        <constraint firstAttribute="width" secondItem="a1q-t8-aGF" secondAttribute="height" multiplier="1:1" id="dvC-D6-88f"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="6rG-WM-6ab" secondAttribute="centerX" id="0HD-iZ-Moi"/>
+                                <constraint firstAttribute="centerX" secondItem="a1q-t8-aGF" secondAttribute="centerX" id="AQD-DX-urs"/>
+                                <constraint firstAttribute="centerY" secondItem="a1q-t8-aGF" secondAttribute="centerY" id="B1l-Ey-3WX"/>
+                                <constraint firstAttribute="centerY" secondItem="6rG-WM-6ab" secondAttribute="centerY" id="ZKd-LB-TQu"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="backgroundHeightConstraint" destination="Nu0-kp-gUC" id="Awh-Nm-mF8"/>
+                                <outlet property="backgroundImageView" destination="6rG-WM-6ab" id="GkA-Ka-yTD"/>
+                                <outlet property="foregroundHeightConstraint" destination="D28-It-VBb" id="SXj-mD-hZA"/>
+                                <outlet property="foregroundImageView" destination="a1q-t8-aGF" id="hjj-rR-Azb"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="7AC-eG-tk7" id="uhS-tx-8Af"/>
+                            <outlet property="delegate" destination="7AC-eG-tk7" id="DqU-R3-rKa"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="six-tI-WQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="327"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" width="612" height="612"/>
+        <image name="portrait" width="246" height="246"/>
+    </resources>
+</document>

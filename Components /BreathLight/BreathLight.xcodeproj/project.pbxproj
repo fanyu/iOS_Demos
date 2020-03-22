@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CD3680B1BD482C500BA5811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3680A1BD482C500BA5811 /* AppDelegate.swift */; };
+		7CD3680D1BD482C500BA5811 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3680C1BD482C500BA5811 /* ViewController.swift */; };
+		7CD368101BD482C500BA5811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD3680E1BD482C500BA5811 /* Main.storyboard */; };
+		7CD368121BD482C500BA5811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD368111BD482C500BA5811 /* Assets.xcassets */; };
+		7CD368151BD482C500BA5811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD368131BD482C500BA5811 /* LaunchScreen.storyboard */; };
+		7CD368201BD482C500BA5811 /* BreathLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3681F1BD482C500BA5811 /* BreathLightTests.swift */; };
+		7CD3682B1BD482C600BA5811 /* BreathLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3682A1BD482C600BA5811 /* BreathLightUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CD3681C1BD482C500BA5811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CD367FF1BD482C500BA5811 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CD368061BD482C500BA5811;
+			remoteInfo = BreathLight;
+		};
+		7CD368271BD482C500BA5811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CD367FF1BD482C500BA5811 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CD368061BD482C500BA5811;
+			remoteInfo = BreathLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CD368071BD482C500BA5811 /* BreathLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD3680A1BD482C500BA5811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CD3680C1BD482C500BA5811 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7CD3680F1BD482C500BA5811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CD368111BD482C500BA5811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CD368141BD482C500BA5811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CD368161BD482C500BA5811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD3681B1BD482C500BA5811 /* BreathLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreathLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD3681F1BD482C500BA5811 /* BreathLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathLightTests.swift; sourceTree = "<group>"; };
+		7CD368211BD482C500BA5811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD368261BD482C500BA5811 /* BreathLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreathLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD3682A1BD482C600BA5811 /* BreathLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathLightUITests.swift; sourceTree = "<group>"; };
+		7CD3682C1BD482C600BA5811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CD368041BD482C500BA5811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CD368181BD482C500BA5811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CD368231BD482C500BA5811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CD367FE1BD482C500BA5811 = {
+			isa = PBXGroup;
+			children = (
+				7CD368091BD482C500BA5811 /* BreathLight */,
+				7CD3681E1BD482C500BA5811 /* BreathLightTests */,
+				7CD368291BD482C600BA5811 /* BreathLightUITests */,
+				7CD368081BD482C500BA5811 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CD368081BD482C500BA5811 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CD368071BD482C500BA5811 /* BreathLight.app */,
+				7CD3681B1BD482C500BA5811 /* BreathLightTests.xctest */,
+				7CD368261BD482C500BA5811 /* BreathLightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CD368091BD482C500BA5811 /* BreathLight */ = {
+			isa = PBXGroup;
+			children = (
+				7CD3680A1BD482C500BA5811 /* AppDelegate.swift */,
+				7CD3680C1BD482C500BA5811 /* ViewController.swift */,
+				7CD3680E1BD482C500BA5811 /* Main.storyboard */,
+				7CD368111BD482C500BA5811 /* Assets.xcassets */,
+				7CD368131BD482C500BA5811 /* LaunchScreen.storyboard */,
+				7CD368161BD482C500BA5811 /* Info.plist */,
+			);
+			path = BreathLight;
+			sourceTree = "<group>";
+		};
+		7CD3681E1BD482C500BA5811 /* BreathLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CD3681F1BD482C500BA5811 /* BreathLightTests.swift */,
+				7CD368211BD482C500BA5811 /* Info.plist */,
+			);
+			path = BreathLightTests;
+			sourceTree = "<group>";
+		};
+		7CD368291BD482C600BA5811 /* BreathLightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CD3682A1BD482C600BA5811 /* BreathLightUITests.swift */,
+				7CD3682C1BD482C600BA5811 /* Info.plist */,
+			);
+			path = BreathLightUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CD368061BD482C500BA5811 /* BreathLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CD3682F1BD482C600BA5811 /* Build configuration list for PBXNativeTarget "BreathLight" */;
+			buildPhases = (
+				7CD368031BD482C500BA5811 /* Sources */,
+				7CD368041BD482C500BA5811 /* Frameworks */,
+				7CD368051BD482C500BA5811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreathLight;
+			productName = BreathLight;
+			productReference = 7CD368071BD482C500BA5811 /* BreathLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CD3681A1BD482C500BA5811 /* BreathLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CD368321BD482C600BA5811 /* Build configuration list for PBXNativeTarget "BreathLightTests" */;
+			buildPhases = (
+				7CD368171BD482C500BA5811 /* Sources */,
+				7CD368181BD482C500BA5811 /* Frameworks */,
+				7CD368191BD482C500BA5811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CD3681D1BD482C500BA5811 /* PBXTargetDependency */,
+			);
+			name = BreathLightTests;
+			productName = BreathLightTests;
+			productReference = 7CD3681B1BD482C500BA5811 /* BreathLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CD368251BD482C500BA5811 /* BreathLightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CD368351BD482C600BA5811 /* Build configuration list for PBXNativeTarget "BreathLightUITests" */;
+			buildPhases = (
+				7CD368221BD482C500BA5811 /* Sources */,
+				7CD368231BD482C500BA5811 /* Frameworks */,
+				7CD368241BD482C500BA5811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CD368281BD482C500BA5811 /* PBXTargetDependency */,
+			);
+			name = BreathLightUITests;
+			productName = BreathLightUITests;
+			productReference = 7CD368261BD482C500BA5811 /* BreathLightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CD367FF1BD482C500BA5811 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = FanYu;
+				TargetAttributes = {
+					7CD368061BD482C500BA5811 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					7CD3681A1BD482C500BA5811 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 7CD368061BD482C500BA5811;
+					};
+					7CD368251BD482C500BA5811 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 7CD368061BD482C500BA5811;
+					};
+				};
+			};
+			buildConfigurationList = 7CD368021BD482C500BA5811 /* Build configuration list for PBXProject "BreathLight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CD367FE1BD482C500BA5811;
+			productRefGroup = 7CD368081BD482C500BA5811 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CD368061BD482C500BA5811 /* BreathLight */,
+				7CD3681A1BD482C500BA5811 /* BreathLightTests */,
+				7CD368251BD482C500BA5811 /* BreathLightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CD368051BD482C500BA5811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD368151BD482C500BA5811 /* LaunchScreen.storyboard in Resources */,
+				7CD368121BD482C500BA5811 /* Assets.xcassets in Resources */,
+				7CD368101BD482C500BA5811 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CD368191BD482C500BA5811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CD368241BD482C500BA5811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CD368031BD482C500BA5811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD3680D1BD482C500BA5811 /* ViewController.swift in Sources */,
+				7CD3680B1BD482C500BA5811 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CD368171BD482C500BA5811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD368201BD482C500BA5811 /* BreathLightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CD368221BD482C500BA5811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD3682B1BD482C600BA5811 /* BreathLightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CD3681D1BD482C500BA5811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CD368061BD482C500BA5811 /* BreathLight */;
+			targetProxy = 7CD3681C1BD482C500BA5811 /* PBXContainerItemProxy */;
+		};
+		7CD368281BD482C500BA5811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CD368061BD482C500BA5811 /* BreathLight */;
+			targetProxy = 7CD368271BD482C500BA5811 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CD3680E1BD482C500BA5811 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CD3680F1BD482C500BA5811 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CD368131BD482C500BA5811 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CD368141BD482C500BA5811 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CD3682D1BD482C600BA5811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CD3682E1BD482C600BA5811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CD368301BD482C600BA5811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BreathLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edc.BreathLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CD368311BD482C600BA5811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BreathLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edc.BreathLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CD368331BD482C600BA5811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BreathLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edc.BreathLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreathLight.app/BreathLight";
+			};
+			name = Debug;
+		};
+		7CD368341BD482C600BA5811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BreathLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edc.BreathLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreathLight.app/BreathLight";
+			};
+			name = Release;
+		};
+		7CD368361BD482C600BA5811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BreathLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edc.BreathLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BreathLight;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7CD368371BD482C600BA5811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BreathLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edc.BreathLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BreathLight;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CD368021BD482C500BA5811 /* Build configuration list for PBXProject "BreathLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CD3682D1BD482C600BA5811 /* Debug */,
+				7CD3682E1BD482C600BA5811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CD3682F1BD482C600BA5811 /* Build configuration list for PBXNativeTarget "BreathLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CD368301BD482C600BA5811 /* Debug */,
+				7CD368311BD482C600BA5811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CD368321BD482C600BA5811 /* Build configuration list for PBXNativeTarget "BreathLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CD368331BD482C600BA5811 /* Debug */,
+				7CD368341BD482C600BA5811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CD368351BD482C600BA5811 /* Build configuration list for PBXNativeTarget "BreathLightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CD368361BD482C600BA5811 /* Debug */,
+				7CD368371BD482C600BA5811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CD367FF1BD482C500BA5811 /* Project object */;
+}

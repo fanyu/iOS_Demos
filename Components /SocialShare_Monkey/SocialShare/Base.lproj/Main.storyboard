@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VQs-ZY-8dH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="vYo-bi-bLU">
+            <objects>
+                <tableViewController id="oJr-Ko-R2G" customClass="TableViewController" customModule="SocialShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z2E-aw-6Iq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="7g0-Rw-jJ8">
+                                <rect key="frame" x="0.0" y="92" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7g0-Rw-jJ8" id="XEG-fw-qFc">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oJr-Ko-R2G" id="VeW-vE-vjs"/>
+                            <outlet property="delegate" destination="oJr-Ko-R2G" id="1sC-EK-4ZY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="oeX-A2-LXR"/>
+                    <connections>
+                        <segue destination="CyC-nk-zg8" kind="push" identifier="Weibo" id="284-n0-c5E"/>
+                        <segue destination="EKU-YU-XZA" kind="push" identifier="WeChat" id="D1w-Y2-i5x"/>
+                        <segue destination="Wrt-cn-crs" kind="push" identifier="Alipay" id="Nhj-jr-8vx"/>
+                        <segue destination="Mbg-Gf-wdc" kind="push" identifier="System" id="7wW-ir-BlL"/>
+                        <segue destination="exy-Ok-X8C" kind="push" identifier="QQ" id="WNp-LK-Hcz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QzI-5W-R5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="291"/>
+        </scene>
+        <!--System-->
+        <scene sceneID="1QM-57-75O">
+            <objects>
+                <viewController id="Mbg-Gf-wdc" customClass="SystemShareViewController" customModule="SocialShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WEd-op-7f0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e6F-gI-VYb">
+                                <rect key="frame" x="131" y="234" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Activites"/>
+                                <connections>
+                                    <action selector="systemShare:" destination="Mbg-Gf-wdc" eventType="touchUpInside" id="btU-VQ-9Vg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="System" id="LLE-GG-gbD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4N-2u-w0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="1094"/>
+        </scene>
+        <!--Alipay-->
+        <scene sceneID="jUb-dd-tvX">
+            <objects>
+                <viewController id="Wrt-cn-crs" customClass="AlipayViewController" customModule="SocialShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5pj-VV-iTT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RL3-lT-dHC">
+                                <rect key="frame" x="145" y="105" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Text"/>
+                                <connections>
+                                    <action selector="shareText:" destination="Wrt-cn-crs" eventType="touchUpInside" id="H2i-CD-WHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JRe-Qf-OSQ">
+                                <rect key="frame" x="139" y="150" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Image"/>
+                                <connections>
+                                    <action selector="shareImage:" destination="Wrt-cn-crs" eventType="touchUpInside" id="rxD-zj-16x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jpn-if-TeO">
+                                <rect key="frame" x="145" y="201" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="URL"/>
+                                <connections>
+                                    <action selector="shareURL:" destination="Wrt-cn-crs" eventType="touchUpInside" id="N5i-AV-Ugk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hd8-pM-kux">
+                                <rect key="frame" x="145" y="252" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pay"/>
+                                <connections>
+                                    <action selector="pay:" destination="Wrt-cn-crs" eventType="touchUpInside" id="mdr-xU-d5S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alipay" id="8vb-H1-GTn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlz-va-0be" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="931"/>
+        </scene>
+        <!--Weibo-->
+        <scene sceneID="ETe-Wy-z76">
+            <objects>
+                <viewController id="CyC-nk-zg8" customClass="WeiboViewController" customModule="SocialShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Hc-Vc-OOX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6WJ-Nf-9Uq">
+                                <rect key="frame" x="116" y="118" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Weibo Image"/>
+                                <connections>
+                                    <action selector="shareImage:" destination="CyC-nk-zg8" eventType="touchUpInside" id="KZp-C6-aN9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JzT-9R-VOe">
+                                <rect key="frame" x="123" y="166" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Weibo Text"/>
+                                <connections>
+                                    <action selector="shareText:" destination="CyC-nk-zg8" eventType="touchUpInside" id="1DE-wd-Ej1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Zq-dF-OVt">
+                                <rect key="frame" x="123" y="220" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Weibo URL"/>
+                                <connections>
+                                    <action selector="shareURL:" destination="CyC-nk-zg8" eventType="touchUpInside" id="hkB-QG-5Q2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0X5-7S-vDq">
+                                <rect key="frame" x="139" y="269" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OAuth"/>
+                                <connections>
+                                    <action selector="OAuth:" destination="CyC-nk-zg8" eventType="touchUpInside" id="66G-gG-brf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Weibo" id="Ogf-TG-D81"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lFy-db-GiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="291"/>
+        </scene>
+        <!--QQ-->
+        <scene sceneID="DvA-t7-rst">
+            <objects>
+                <viewController id="exy-Ok-X8C" customClass="QQViewController" customModule="SocialShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="91r-Jk-DkK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iuQ-Bw-t2i">
+                                <rect key="frame" x="145" y="152" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Text"/>
+                                <connections>
+                                    <action selector="shareText:" destination="exy-Ok-X8C" eventType="touchUpInside" id="FOz-xP-QTQ"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="ayw-0k-cj4">
+                                <rect key="frame" x="20" y="87" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Friends"/>
+                                    <segment title="QZone"/>
+                                    <segment title="Dataline"/>
+                                    <segment title="Favorites"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BuE-N6-pP3">
+                                <rect key="frame" x="145" y="190" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="URL"/>
+                                <connections>
+                                    <action selector="shareURL:" destination="exy-Ok-X8C" eventType="touchUpInside" id="MW3-ty-Dpj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dcd-L6-c7x">
+                                <rect key="frame" x="139" y="228" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Image"/>
+                                <connections>
+                                    <action selector="shareImage:" destination="exy-Ok-X8C" eventType="touchUpInside" id="umL-UE-Iv1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="M5G-oq-QeE">
+                                <rect key="frame" x="140" y="266" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Audio"/>
+                                <connections>
+                                    <action selector="shareAudio:" destination="exy-Ok-X8C" eventType="touchUpInside" id="Agp-bz-Wc3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EnE-7f-nAd">
+                                <rect key="frame" x="140" y="304" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Video"/>
+                                <connections>
+                                    <action selector="shareVideo:" destination="exy-Ok-X8C" eventType="touchUpInside" id="9q6-av-Npg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xat-Xe-dlW">
+                                <rect key="frame" x="139" y="404" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OAuth"/>
+                                <connections>
+                                    <action selector="OAuth:" destination="exy-Ok-X8C" eventType="touchUpInside" id="2wG-X3-wP0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZJm-Vq-FS4">
+                                <rect key="frame" x="145" y="342" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="File"/>
+                                <connections>
+                                    <action selector="shareFile:" destination="exy-Ok-X8C" eventType="touchUpInside" id="11e-9H-3uf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="QQ" id="MaA-kN-QIb"/>
+                    <connections>
+                        <outlet property="segmentControl" destination="ayw-0k-cj4" id="n9l-bd-WaG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKL-7h-uBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="-335"/>
+        </scene>
+        <!--WeChat-->
+        <scene sceneID="rOd-n2-4Vn">
+            <objects>
+                <viewController id="EKU-YU-XZA" customClass="WeChatViewController" customModule="SocialShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YXr-CP-mHo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qF8-Gw-roD">
+                                <rect key="frame" x="145" y="137" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Text"/>
+                                <connections>
+                                    <action selector="shareText:" destination="EKU-YU-XZA" eventType="touchUpInside" id="790-f3-zsj"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="bHI-Yb-hOv">
+                                <rect key="frame" x="44" y="84" width="232" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Friend"/>
+                                    <segment title="Timeline"/>
+                                    <segment title="Favorite"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2g1-hQ-99M">
+                                <rect key="frame" x="145" y="175" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="URl"/>
+                                <connections>
+                                    <action selector="shareURL:" destination="EKU-YU-XZA" eventType="touchUpInside" id="4ps-NZ-91k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nde-bC-Nfy">
+                                <rect key="frame" x="139" y="213" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Image"/>
+                                <connections>
+                                    <action selector="shareImage:" destination="EKU-YU-XZA" eventType="touchUpInside" id="Eb6-ch-RDe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IaL-Oy-OYU">
+                                <rect key="frame" x="140" y="251" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Music"/>
+                                <connections>
+                                    <action selector="shareMusic:" destination="EKU-YU-XZA" eventType="touchUpInside" id="a8i-hd-9Mj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lTW-Nr-70n">
+                                <rect key="frame" x="141" y="289" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Video"/>
+                                <connections>
+                                    <action selector="shareVideo:" destination="EKU-YU-XZA" eventType="touchUpInside" id="hHY-9C-Jxe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x2C-db-z8Y">
+                                <rect key="frame" x="138" y="400" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OAuth"/>
+                                <connections>
+                                    <action selector="OAuth:" destination="EKU-YU-XZA" eventType="touchUpInside" id="v9U-6Q-B1t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="flC-Vc-Dcn">
+                                <rect key="frame" x="79" y="438" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OAuth Without App Key"/>
+                                <connections>
+                                    <action selector="OAuthWithoutAppKey:" destination="EKU-YU-XZA" eventType="touchUpInside" id="WfO-8b-SNM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mp4-53-EHX">
+                                <rect key="frame" x="144" y="499" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pay"/>
+                                <connections>
+                                    <action selector="pay:" destination="EKU-YU-XZA" eventType="touchUpInside" id="Ac8-mI-Ukd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WeChat" id="Si3-xg-RJs"/>
+                    <connections>
+                        <outlet property="segmentControl" destination="bHI-Yb-hOv" id="iFA-qI-Ak0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOH-GC-piG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="-335"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DR9-7k-nPJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VQs-ZY-8dH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QXB-9G-JcY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oJr-Ko-R2G" kind="relationship" relationship="rootViewController" id="9aL-RW-Iad"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XnW-cD-DP3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179" y="291"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="BubbleWeather2Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="423"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="DYR-xM-7b2">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Jpe-Fg-lYC" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLH-3r-4dL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1027" y="66"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="AKs-te-sD3">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="ajl-1N-qCo" customClass="PageContentViewController" customModule="BubbleWeather2Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hz6-cz-3PG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qho-eC-TaP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RIb-X1-2jo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="city name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Po-j6-azZ">
+                                <rect key="frame" x="190" y="28" width="220" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="8Fu-tb-1XN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sl-Mb-aLm">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xe-KF-iIK">
+                                <rect key="frame" x="289" y="558" width="22" height="22"/>
+                                <animations/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Xz-z9-U7H" kind="show" id="qmm-ac-qyf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="3Po-j6-azZ" firstAttribute="top" secondItem="Hz6-cz-3PG" secondAttribute="bottom" constant="8" id="2f9-gQ-9ZX"/>
+                            <constraint firstAttribute="centerX" secondItem="3Po-j6-azZ" secondAttribute="centerX" id="C7g-Ok-Byw"/>
+                            <constraint firstAttribute="centerX" secondItem="2xe-KF-iIK" secondAttribute="centerX" id="FpU-Qt-Nj7"/>
+                            <constraint firstAttribute="centerY" secondItem="9sl-Mb-aLm" secondAttribute="centerY" id="avz-Le-mGI"/>
+                            <constraint firstAttribute="centerX" secondItem="9sl-Mb-aLm" secondAttribute="centerX" id="s7C-5S-1y3"/>
+                            <constraint firstItem="Qho-eC-TaP" firstAttribute="top" secondItem="2xe-KF-iIK" secondAttribute="bottom" constant="20" id="wSG-rE-Oq5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityName" destination="3Po-j6-azZ" id="bxQ-TG-7nJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSQ-8X-UXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1027" y="760"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="ct6-sR-g8I">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="uzd-KQ-UId" customClass="SearchViewController" customModule="BubbleWeather2Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uKJ-Wa-xV3"/>
+                        <viewControllerLayoutGuide type="bottom" id="fkl-aC-Cbw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u7d-MA-lEg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NhQ-qR-d6d">
+                                <rect key="frame" x="0.0" y="40" width="600" height="560"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchCell" id="E75-Ss-WY2">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E75-Ss-WY2" id="a5E-Po-6wy">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="NhQ-qR-d6d" firstAttribute="leading" secondItem="u7d-MA-lEg" secondAttribute="leadingMargin" constant="-16" id="Vfv-Lv-lbt"/>
+                            <constraint firstItem="NhQ-qR-d6d" firstAttribute="top" secondItem="u7d-MA-lEg" secondAttribute="topMargin" constant="40" id="n1j-fv-qvG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NhQ-qR-d6d" secondAttribute="trailing" constant="-16" id="nFT-sx-906"/>
+                            <constraint firstItem="fkl-aC-Cbw" firstAttribute="top" secondItem="NhQ-qR-d6d" secondAttribute="bottom" id="s2B-8T-TrJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="xxV-ja-l8i" id="F6C-G4-Qnd"/>
+                        <outlet property="tableView" destination="NhQ-qR-d6d" id="BKn-jO-Mll"/>
+                    </connections>
+                </viewController>
+                <searchDisplayController id="xxV-ja-l8i">
+                    <connections>
+                        <outlet property="delegate" destination="uzd-KQ-UId" id="QDF-DB-dOt"/>
+                        <outlet property="searchContentsController" destination="uzd-KQ-UId" id="0Pz-If-ZVb"/>
+                        <outlet property="searchResultsDataSource" destination="uzd-KQ-UId" id="swt-0b-1Jm"/>
+                        <outlet property="searchResultsDelegate" destination="uzd-KQ-UId" id="UNo-dE-Alf"/>
+                    </connections>
+                </searchDisplayController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nvf-U0-pHU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="760"/>
+        </scene>
+        <!--设置-->
+        <scene sceneID="4NY-nZ-FGO">
+            <objects>
+                <tableViewController id="atk-7j-wi6" customClass="SettingTableViewController" customModule="BubbleWeather2Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SettingDetail" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="grouped" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="sHo-wM-lfb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingCell" id="ccn-tp-h36">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ccn-tp-h36" id="g6R-14-koc">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="atk-7j-wi6" id="0aY-kN-XhE"/>
+                            <outlet property="delegate" destination="atk-7j-wi6" id="z4g-I9-uR7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="设置" id="PxQ-yO-OQy">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="ihM-3k-Hug"/>
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="4xq-lc-zuO">
+                            <connections>
+                                <action selector="backBarButton:" destination="atk-7j-wi6" id="pNn-vg-OEn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Mwt-uP-hkU" kind="show" identifier="SettingDetail" id="KQS-AP-hZ9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tej-97-Hwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="1460"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lfO-10-OhB">
+            <objects>
+                <viewController id="Mwt-uP-hkU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nYi-5v-uzF"/>
+                        <viewControllerLayoutGuide type="bottom" id="rwa-KZ-nKX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rV9-gm-Vjg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51q-ZY-cU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2412" y="1460"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="Eq0-ck-3c7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Xz-z9-U7H" customClass="NavigationViewController" customModule="BubbleWeather2Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8di-ya-t1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="atk-7j-wi6" kind="relationship" relationship="rootViewController" id="HIf-fn-K5p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqc-TE-bgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1027" y="1460"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="MessageLikeScrollView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="elR-Hb-ttP">
+                        <rect key="frame" x="8" y="11" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="YHI-ib-0MC"/>
+                            <constraint firstAttribute="height" constant="44" id="ufc-6k-gvB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CI-k3-30P">
+                        <rect key="frame" x="60" y="22" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5j-v4-eNP">
+                        <rect key="frame" x="300" y="22" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="elR-Hb-ttP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2zB-BI-uRC"/>
+                    <constraint firstItem="6CI-k3-30P" firstAttribute="centerY" secondItem="elR-Hb-ttP" secondAttribute="centerY" id="aJF-8b-RDM"/>
+                    <constraint firstItem="W5j-v4-eNP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mIf-al-LLC"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="elR-Hb-ttP" secondAttribute="leading" id="o9y-Gk-fqg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="W5j-v4-eNP" secondAttribute="trailing" id="rpV-nk-xYy"/>
+                    <constraint firstItem="6CI-k3-30P" firstAttribute="leading" secondItem="elR-Hb-ttP" secondAttribute="trailing" constant="8" id="x7Y-Eb-pGw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImage" destination="elR-Hb-ttP" id="VWx-Up-fhN"/>
+                <outlet property="timeLabel" destination="W5j-v4-eNP" id="k34-gb-mXo"/>
+                <outlet property="timeLabelTrailingConstraint" destination="rpV-nk-xYy" id="USf-Wm-NRN"/>
+                <outlet property="titleLabel" destination="6CI-k3-30P" id="l4F-tg-pzY"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

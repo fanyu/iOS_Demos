@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9tj-Gk-6TQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoFromSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yif-LM-5kP">
+                                <rect key="frame" x="229" y="285" width="142" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Choose Photo Demo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhotoDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSh-vd-EYE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YB8-Es-w2N">
+                                <rect key="frame" x="236" y="340" width="128" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Fetch Photo Demo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetchPhotoDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ztd-F6-rfx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PB-af-eGt">
+                                <rect key="frame" x="243" y="393" width="114" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Collection Demo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Collection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0R-kN-Yuj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCN-j0-j9N">
+                                <rect key="frame" x="207" y="441" width="187" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="All Photos TableView Demo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="allPhotosDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m3t-5x-mbG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozd-Sa-HDK">
+                                <rect key="frame" x="226" y="234" width="148" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Customer Take Photo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="customerTakePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOp-2s-dwa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSs-h9-ufG">
+                                <rect key="frame" x="246" y="180" width="109" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Yep Style Demo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="yepStyleDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rRo-Zk-TNe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YB8-Es-w2N" firstAttribute="top" secondItem="Yif-LM-5kP" secondAttribute="bottom" constant="25" id="2Le-qv-Q7v"/>
+                            <constraint firstItem="7PB-af-eGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bgh-JB-mS8"/>
+                            <constraint firstItem="Ozd-Sa-HDK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CS3-YJ-Uv4"/>
+                            <constraint firstItem="BCN-j0-j9N" firstAttribute="top" secondItem="7PB-af-eGt" secondAttribute="bottom" constant="18" id="D7a-l5-S4U"/>
+                            <constraint firstItem="Yif-LM-5kP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FA3-5d-xot"/>
+                            <constraint firstItem="YB8-Es-w2N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GRm-Gg-dtT"/>
+                            <constraint firstItem="7PB-af-eGt" firstAttribute="top" secondItem="YB8-Es-w2N" secondAttribute="bottom" constant="23" id="L2Q-Ye-Siw"/>
+                            <constraint firstItem="BCN-j0-j9N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XAP-O4-9Kg"/>
+                            <constraint firstItem="Yif-LM-5kP" firstAttribute="top" secondItem="Ozd-Sa-HDK" secondAttribute="bottom" constant="21" id="h2v-Cp-yfH"/>
+                            <constraint firstItem="Ozd-Sa-HDK" firstAttribute="top" secondItem="pSs-h9-ufG" secondAttribute="bottom" constant="24" id="kNO-im-gyo"/>
+                            <constraint firstItem="pSs-h9-ufG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vbR-eV-jZN"/>
+                            <constraint firstItem="Yif-LM-5kP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wJm-vc-eV1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y0b-p2-4Cc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="-353"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bjs-uW-WBM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="9tj-Gk-6TQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G9R-t3-jKi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="YRq-tR-mnc">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qb0-ra-VN9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYP-dN-ome" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="-353"/>
+        </scene>
+    </scenes>
+</document>

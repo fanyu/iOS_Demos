@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A244d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uEy-9w-JCK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--WeChat-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBM-N8-wBe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toolbar_bottom_bar" translatesAutoresizingMaskIntoConstraints="NO" id="QXQ-Tf-G7s">
+                                        <rect key="frame" x="0.0" y="559.5" width="600" height="50"/>
+                                        <animations/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0w-4b-7PD">
+                                        <rect key="frame" x="15" y="570" width="34" height="34"/>
+                                        <animations/>
+                                        <state key="normal" image="chat_bottom_voice_nor">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVK-tL-pmg">
+                                        <rect key="frame" x="516" y="570" width="34" height="34"/>
+                                        <animations/>
+                                        <state key="normal" image="chat_bottom_up_nor">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWj-gK-VOJ">
+                                        <rect key="frame" x="558" y="570" width="34" height="34"/>
+                                        <animations/>
+                                        <state key="normal" image="chat_bottom_smile_nor">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdK-at-bVC">
+                                        <rect key="frame" x="57" y="570" width="447" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="447" id="mca-qb-1tH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cWj-gK-VOJ" firstAttribute="leading" secondItem="QXQ-Tf-G7s" secondAttribute="trailing" constant="-42" id="F3p-eA-frv"/>
+                                    <constraint firstAttribute="trailing" secondItem="QXQ-Tf-G7s" secondAttribute="trailing" id="H6M-mR-CJ0"/>
+                                    <constraint firstItem="QXQ-Tf-G7s" firstAttribute="leading" secondItem="B0w-4b-7PD" secondAttribute="trailing" constant="-49" id="JAx-f8-3YP"/>
+                                    <constraint firstItem="cWj-gK-VOJ" firstAttribute="leading" secondItem="JVK-tL-pmg" secondAttribute="trailing" constant="8" id="JTR-QK-3Po"/>
+                                    <constraint firstAttribute="bottom" secondItem="bdK-at-bVC" secondAttribute="bottom" id="MQa-Fa-2Wr"/>
+                                    <constraint firstItem="bdK-at-bVC" firstAttribute="leading" secondItem="B0w-4b-7PD" secondAttribute="trailing" constant="8" id="VWq-ku-PiR"/>
+                                    <constraint firstItem="JVK-tL-pmg" firstAttribute="leading" secondItem="bdK-at-bVC" secondAttribute="trailing" constant="12" id="act-LT-AF3"/>
+                                    <constraint firstItem="QXQ-Tf-G7s" firstAttribute="centerY" secondItem="cWj-gK-VOJ" secondAttribute="centerY" constant="-2.5" id="dHt-lm-K89"/>
+                                    <constraint firstItem="JVK-tL-pmg" firstAttribute="centerY" secondItem="QXQ-Tf-G7s" secondAttribute="centerY" constant="2.5" id="rEE-a2-MF1"/>
+                                    <constraint firstItem="QXQ-Tf-G7s" firstAttribute="leading" secondItem="HBM-N8-wBe" secondAttribute="leading" id="tg1-QX-C8Q"/>
+                                    <constraint firstItem="B0w-4b-7PD" firstAttribute="centerY" secondItem="QXQ-Tf-G7s" secondAttribute="centerY" constant="2.5" id="yDD-HM-ayc"/>
+                                    <constraint firstItem="QXQ-Tf-G7s" firstAttribute="centerY" secondItem="bdK-at-bVC" secondAttribute="centerY" id="z3q-aR-X61"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HBM-N8-wBe" secondAttribute="bottom" id="4m0-Ne-TaC"/>
+                            <constraint firstItem="HBM-N8-wBe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="XsF-r0-DhV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HBM-N8-wBe" secondAttribute="trailing" constant="-16" id="a4l-S2-YpR"/>
+                            <constraint firstItem="HBM-N8-wBe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="yQp-3V-QEX"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="HBM-N8-wBe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="WeChat" id="ZJu-bd-tbO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="1000"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fmf-iE-Km7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uEy-9w-JCK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fl9-TW-D9s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fio-eX-Cta"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cut-yy-SRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="1000"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat_bottom_smile_nor" width="34" height="34"/>
+        <image name="chat_bottom_up_nor" width="34" height="34"/>
+        <image name="chat_bottom_voice_nor" width="34" height="34"/>
+        <image name="toolbar_bottom_bar" width="10" height="50"/>
+    </resources>
+</document>

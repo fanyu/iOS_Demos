@@ -1,0 +1,6 @@
+
+target "WeiboList" do 
+
+pod "YYKit"
+
+end

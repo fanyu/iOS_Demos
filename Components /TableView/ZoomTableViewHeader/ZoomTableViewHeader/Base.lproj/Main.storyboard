@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oaa-uM-k4D">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View Controller-->
+        <scene sceneID="ofj-Xq-yH8">
+            <objects>
+                <viewController id="oaa-uM-k4D" customClass="MyViewController" customModule="ZoomTableViewHeader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7CY-ob-UmT"/>
+                        <viewControllerLayoutGuide type="bottom" id="bUx-MW-rjQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fq7-jG-WFI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s91-j8-LmB" userLabel="TopView">
+                                <rect key="frame" x="4" y="0.0" width="592" height="200"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fXe-8W-oG4">
+                                        <rect key="frame" x="-2" y="169" width="596" height="31"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SFX-JP-oRf"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="wGz-7s-Zeh"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                            <segment title="Third"/>
+                                        </segments>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="wGz-7s-Zeh"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="segmentTapped:" destination="oaa-uM-k4D" eventType="valueChanged" id="Upk-pR-hWs"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="1iv-VP-Ebd">
+                                        <rect key="frame" x="246" y="36" width="100" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="CeL-s3-l0a"/>
+                                            <constraint firstAttribute="width" constant="100" id="cln-HC-A3z"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="LBX-49-qlU"/>
+                                    <constraint firstAttribute="centerX" secondItem="1iv-VP-Ebd" secondAttribute="centerX" id="LJG-NY-1WR"/>
+                                    <constraint firstAttribute="centerX" secondItem="1iv-VP-Ebd" secondAttribute="centerX" id="LuJ-Ct-blh"/>
+                                    <constraint firstItem="fXe-8W-oG4" firstAttribute="leading" secondItem="s91-j8-LmB" secondAttribute="leading" constant="-2" id="V0L-xp-rHJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="fXe-8W-oG4" secondAttribute="bottom" constant="1" id="aa4-Jo-z7h"/>
+                                    <constraint firstItem="fXe-8W-oG4" firstAttribute="top" secondItem="1iv-VP-Ebd" secondAttribute="bottom" constant="33" id="hG9-11-fsp"/>
+                                    <constraint firstAttribute="trailing" secondItem="fXe-8W-oG4" secondAttribute="trailing" constant="-2" id="miU-Ml-0RP"/>
+                                    <constraint firstItem="1iv-VP-Ebd" firstAttribute="top" secondItem="s91-j8-LmB" secondAttribute="top" constant="36" id="pJ5-IR-B8H"/>
+                                    <constraint firstAttribute="centerX" secondItem="1iv-VP-Ebd" secondAttribute="centerX" id="yyU-gw-cQ9"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LJG-NY-1WR"/>
+                                        <exclude reference="LuJ-Ct-blh"/>
+                                        <exclude reference="pJ5-IR-B8H"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="OPw-CZ-bCh">
+                                <rect key="frame" x="4" y="200" width="592" height="400"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="rWU-SJ-9EV">
+                                        <rect key="frame" x="0.0" y="22" width="592" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rWU-SJ-9EV" id="BnN-4v-SKX">
+                                            <rect key="frame" x="0.0" y="0.0" width="592" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="s91-j8-LmB" firstAttribute="top" secondItem="7CY-ob-UmT" secondAttribute="bottom" constant="-20" id="00r-d1-zON"/>
+                            <constraint firstItem="s91-j8-LmB" firstAttribute="top" secondItem="7CY-ob-UmT" secondAttribute="bottom" constant="-20" id="BlB-5u-4yg"/>
+                            <constraint firstItem="OPw-CZ-bCh" firstAttribute="top" secondItem="s91-j8-LmB" secondAttribute="bottom" id="EF6-MC-E02"/>
+                            <constraint firstItem="s91-j8-LmB" firstAttribute="leading" secondItem="Fq7-jG-WFI" secondAttribute="leadingMargin" constant="-16" id="eef-zx-mJ2"/>
+                            <constraint firstItem="bUx-MW-rjQ" firstAttribute="top" secondItem="OPw-CZ-bCh" secondAttribute="bottom" id="kKN-Ks-wYG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OPw-CZ-bCh" secondAttribute="trailing" constant="-16" id="oKg-I9-GRK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s91-j8-LmB" secondAttribute="trailing" constant="-16" id="q1i-3a-9rb"/>
+                            <constraint firstItem="OPw-CZ-bCh" firstAttribute="leading" secondItem="Fq7-jG-WFI" secondAttribute="leadingMargin" constant="-16" id="tOz-8i-EKA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="00r-d1-zON"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="TopHeightConstraint" destination="LBX-49-qlU" id="9xR-kr-XxN"/>
+                        <outlet property="portraitImage" destination="1iv-VP-Ebd" id="kGk-56-Eb1"/>
+                        <outlet property="segmentControlView" destination="fXe-8W-oG4" id="NCp-7T-1yf"/>
+                        <outlet property="tableView" destination="OPw-CZ-bCh" id="6CW-FV-3ld"/>
+                        <outlet property="topView" destination="s91-j8-LmB" id="3QJ-1r-sEB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTf-UL-icK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="270"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" width="612" height="612"/>
+    </resources>
+</document>

@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CB9A648229B758A002E97E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9A647229B758A002E97E1 /* AppDelegate.m */; };
+		7CB9A64B229B758A002E97E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9A64A229B758A002E97E1 /* ViewController.m */; };
+		7CB9A64E229B758A002E97E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB9A64C229B758A002E97E1 /* Main.storyboard */; };
+		7CB9A650229B758B002E97E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB9A64F229B758B002E97E1 /* Assets.xcassets */; };
+		7CB9A653229B758B002E97E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB9A651229B758B002E97E1 /* LaunchScreen.storyboard */; };
+		7CB9A656229B758B002E97E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9A655229B758B002E97E1 /* main.m */; };
+		7CB9A65F229B7633002E97E1 /* RaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9A65E229B7633002E97E1 /* RaderModel.m */; };
+		7CB9A662229B7B74002E97E1 /* RadarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9A661229B7B74002E97E1 /* RadarItem.m */; };
+		7CB9A665229B7C7A002E97E1 /* RadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9A664229B7C7A002E97E1 /* RadarView.m */; };
+		7CB9A668229B7C99002E97E1 /* RadarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9A667229B7C99002E97E1 /* RadarConfiguration.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7CB9A643229B758A002E97E1 /* RadarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB9A646229B758A002E97E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CB9A647229B758A002E97E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CB9A649229B758A002E97E1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7CB9A64A229B758A002E97E1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7CB9A64D229B758A002E97E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CB9A64F229B758B002E97E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CB9A652229B758B002E97E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CB9A654229B758B002E97E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CB9A655229B758B002E97E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CB9A65D229B7633002E97E1 /* RaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaderModel.h; sourceTree = "<group>"; };
+		7CB9A65E229B7633002E97E1 /* RaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaderModel.m; sourceTree = "<group>"; };
+		7CB9A660229B7B74002E97E1 /* RadarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadarItem.h; sourceTree = "<group>"; };
+		7CB9A661229B7B74002E97E1 /* RadarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadarItem.m; sourceTree = "<group>"; };
+		7CB9A663229B7C7A002E97E1 /* RadarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadarView.h; sourceTree = "<group>"; };
+		7CB9A664229B7C7A002E97E1 /* RadarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadarView.m; sourceTree = "<group>"; };
+		7CB9A666229B7C99002E97E1 /* RadarConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadarConfiguration.h; sourceTree = "<group>"; };
+		7CB9A667229B7C99002E97E1 /* RadarConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadarConfiguration.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CB9A640229B758A002E97E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CB9A63A229B758A002E97E1 = {
+			isa = PBXGroup;
+			children = (
+				7CB9A645229B758A002E97E1 /* RadarView */,
+				7CB9A644229B758A002E97E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CB9A644229B758A002E97E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CB9A643229B758A002E97E1 /* RadarView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CB9A645229B758A002E97E1 /* RadarView */ = {
+			isa = PBXGroup;
+			children = (
+				7CB9A65C229B7613002E97E1 /* Radar */,
+				7CB9A646229B758A002E97E1 /* AppDelegate.h */,
+				7CB9A647229B758A002E97E1 /* AppDelegate.m */,
+				7CB9A649229B758A002E97E1 /* ViewController.h */,
+				7CB9A64A229B758A002E97E1 /* ViewController.m */,
+				7CB9A64C229B758A002E97E1 /* Main.storyboard */,
+				7CB9A64F229B758B002E97E1 /* Assets.xcassets */,
+				7CB9A651229B758B002E97E1 /* LaunchScreen.storyboard */,
+				7CB9A654229B758B002E97E1 /* Info.plist */,
+				7CB9A655229B758B002E97E1 /* main.m */,
+			);
+			path = RadarView;
+			sourceTree = "<group>";
+		};
+		7CB9A65C229B7613002E97E1 /* Radar */ = {
+			isa = PBXGroup;
+			children = (
+				7CB9A65D229B7633002E97E1 /* RaderModel.h */,
+				7CB9A65E229B7633002E97E1 /* RaderModel.m */,
+				7CB9A660229B7B74002E97E1 /* RadarItem.h */,
+				7CB9A661229B7B74002E97E1 /* RadarItem.m */,
+				7CB9A666229B7C99002E97E1 /* RadarConfiguration.h */,
+				7CB9A667229B7C99002E97E1 /* RadarConfiguration.m */,
+				7CB9A663229B7C7A002E97E1 /* RadarView.h */,
+				7CB9A664229B7C7A002E97E1 /* RadarView.m */,
+			);
+			path = Radar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CB9A642229B758A002E97E1 /* RadarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CB9A659229B758B002E97E1 /* Build configuration list for PBXNativeTarget "RadarView" */;
+			buildPhases = (
+				7CB9A63F229B758A002E97E1 /* Sources */,
+				7CB9A640229B758A002E97E1 /* Frameworks */,
+				7CB9A641229B758A002E97E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadarView;
+			productName = RadarView;
+			productReference = 7CB9A643229B758A002E97E1 /* RadarView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CB9A63B229B758A002E97E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Yu Fan";
+				TargetAttributes = {
+					7CB9A642229B758A002E97E1 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7CB9A63E229B758A002E97E1 /* Build configuration list for PBXProject "RadarView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CB9A63A229B758A002E97E1;
+			productRefGroup = 7CB9A644229B758A002E97E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CB9A642229B758A002E97E1 /* RadarView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CB9A641229B758A002E97E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB9A653229B758B002E97E1 /* LaunchScreen.storyboard in Resources */,
+				7CB9A650229B758B002E97E1 /* Assets.xcassets in Resources */,
+				7CB9A64E229B758A002E97E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CB9A63F229B758A002E97E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB9A64B229B758A002E97E1 /* ViewController.m in Sources */,
+				7CB9A662229B7B74002E97E1 /* RadarItem.m in Sources */,
+				7CB9A668229B7C99002E97E1 /* RadarConfiguration.m in Sources */,
+				7CB9A656229B758B002E97E1 /* main.m in Sources */,
+				7CB9A665229B7C7A002E97E1 /* RadarView.m in Sources */,
+				7CB9A65F229B7633002E97E1 /* RaderModel.m in Sources */,
+				7CB9A648229B758A002E97E1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7CB9A64C229B758A002E97E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CB9A64D229B758A002E97E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CB9A651229B758B002E97E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CB9A652229B758B002E97E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CB9A657229B758B002E97E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7CB9A658229B758B002E97E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CB9A65A229B758B002E97E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K52WP93HZU;
+				INFOPLIST_FILE = RadarView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yu-Fan.RadarView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CB9A65B229B758B002E97E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K52WP93HZU;
+				INFOPLIST_FILE = RadarView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yu-Fan.RadarView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CB9A63E229B758A002E97E1 /* Build configuration list for PBXProject "RadarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CB9A657229B758B002E97E1 /* Debug */,
+				7CB9A658229B758B002E97E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CB9A659229B758B002E97E1 /* Build configuration list for PBXNativeTarget "RadarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CB9A65A229B758B002E97E1 /* Debug */,
+				7CB9A65B229B758B002E97E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CB9A63B229B758A002E97E1 /* Project object */;
+}

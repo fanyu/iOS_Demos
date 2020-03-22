@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cgT-xX-UQc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Collection View Controller-->
+        <scene sceneID="dGv-uk-acx">
+            <objects>
+                <collectionViewController id="cgT-xX-UQc" customClass="PhotoCollectionViewController" customModule="PhotoBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" id="0gN-qz-9p2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yZi-ke-5Jp">
+                            <size key="itemSize" width="141" height="132"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="qC1-f7-AEh" customClass="CollectionViewCell" customModule="PhotoBrowser" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="141" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="141" height="132"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0gd-Td-io6">
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="132"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0gd-Td-io6" firstAttribute="leading" secondItem="qC1-f7-AEh" secondAttribute="leadingMargin" constant="-8" id="DqS-fr-qxT"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="0gd-Td-io6" secondAttribute="bottom" constant="-8" id="Ikt-c9-9IW"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="0gd-Td-io6" secondAttribute="trailing" constant="-8" id="MvZ-nv-b6G"/>
+                                    <constraint firstItem="0gd-Td-io6" firstAttribute="top" secondItem="qC1-f7-AEh" secondAttribute="topMargin" constant="-8" id="dVx-1C-YMv"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="0gd-Td-io6" id="62r-Wa-Ssj"/>
+                                    <segue destination="RFO-hW-h9m" kind="presentation" identifier="Showphoto" id="UwY-m6-Z2W"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoBrowserFooterView" id="cA0-UB-fae" customClass="FooterView" customModule="PhotoBrowser" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="132" width="600" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="cgT-xX-UQc" id="yVB-uU-s6p"/>
+                            <outlet property="delegate" destination="cgT-xX-UQc" id="I7Q-2G-Qwd"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tsk-Ho-9du" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="306"/>
+        </scene>
+        <!--Photo ViewerVC-->
+        <scene sceneID="aOX-0I-KQI">
+            <objects>
+                <viewController id="RFO-hW-h9m" customClass="PhotoViewerVC" customModule="PhotoBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gdn-n6-aXg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tqd-Gd-Bdb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fx3-4G-Drf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pih-P5-iJ0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8D1-OS-QRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869" y="306"/>
+        </scene>
+    </scenes>
+</document>

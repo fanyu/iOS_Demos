@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  WeiboList
+//
+//  Created by Yu Fan on 2019/5/17.
+//  Copyright © 2019 Yu Fan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "WeiboHelper.h"
+#import "WeiboModel.h"
+#import "WeiboCell.h"
+#import "WeiboLayout.h"
+
+#define WEAK_SELF   @weakify(self);
+#define STRONG_SELF @strongify(self); if(!self) {return;};
+
+
+#endif /* PrefixHeader_pch */

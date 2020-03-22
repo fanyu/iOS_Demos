@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C99D7C91BFD669000D090E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99D7C81BFD669000D090E3 /* AppDelegate.swift */; };
+		7C99D7CB1BFD669000D090E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99D7CA1BFD669000D090E3 /* ViewController.swift */; };
+		7C99D7CE1BFD669000D090E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C99D7CC1BFD669000D090E3 /* Main.storyboard */; };
+		7C99D7D01BFD669000D090E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C99D7CF1BFD669000D090E3 /* Assets.xcassets */; };
+		7C99D7D31BFD669000D090E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C99D7D11BFD669000D090E3 /* LaunchScreen.storyboard */; };
+		7C99D7DE1BFD669000D090E3 /* CuteDragTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99D7DD1BFD669000D090E3 /* CuteDragTests.swift */; };
+		7C99D7E91BFD669000D090E3 /* CuteDragUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99D7E81BFD669000D090E3 /* CuteDragUITests.swift */; };
+		7C99D7F71BFD66ED00D090E3 /* CuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99D7F61BFD66ED00D090E3 /* CuteView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C99D7DA1BFD669000D090E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C99D7BD1BFD669000D090E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C99D7C41BFD669000D090E3;
+			remoteInfo = CuteDrag;
+		};
+		7C99D7E51BFD669000D090E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C99D7BD1BFD669000D090E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C99D7C41BFD669000D090E3;
+			remoteInfo = CuteDrag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C99D7C51BFD669000D090E3 /* CuteDrag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuteDrag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C99D7C81BFD669000D090E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C99D7CA1BFD669000D090E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C99D7CD1BFD669000D090E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C99D7CF1BFD669000D090E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C99D7D21BFD669000D090E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C99D7D41BFD669000D090E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C99D7D91BFD669000D090E3 /* CuteDragTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteDragTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C99D7DD1BFD669000D090E3 /* CuteDragTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDragTests.swift; sourceTree = "<group>"; };
+		7C99D7DF1BFD669000D090E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C99D7E41BFD669000D090E3 /* CuteDragUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteDragUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C99D7E81BFD669000D090E3 /* CuteDragUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteDragUITests.swift; sourceTree = "<group>"; };
+		7C99D7EA1BFD669000D090E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C99D7F61BFD66ED00D090E3 /* CuteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuteView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C99D7C21BFD669000D090E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C99D7D61BFD669000D090E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C99D7E11BFD669000D090E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C99D7BC1BFD669000D090E3 = {
+			isa = PBXGroup;
+			children = (
+				7C99D7C71BFD669000D090E3 /* CuteDrag */,
+				7C99D7DC1BFD669000D090E3 /* CuteDragTests */,
+				7C99D7E71BFD669000D090E3 /* CuteDragUITests */,
+				7C99D7C61BFD669000D090E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C99D7C61BFD669000D090E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C99D7C51BFD669000D090E3 /* CuteDrag.app */,
+				7C99D7D91BFD669000D090E3 /* CuteDragTests.xctest */,
+				7C99D7E41BFD669000D090E3 /* CuteDragUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C99D7C71BFD669000D090E3 /* CuteDrag */ = {
+			isa = PBXGroup;
+			children = (
+				7C99D7C81BFD669000D090E3 /* AppDelegate.swift */,
+				7C99D7CA1BFD669000D090E3 /* ViewController.swift */,
+				7C99D7F61BFD66ED00D090E3 /* CuteView.swift */,
+				7C99D7CC1BFD669000D090E3 /* Main.storyboard */,
+				7C99D7CF1BFD669000D090E3 /* Assets.xcassets */,
+				7C99D7D11BFD669000D090E3 /* LaunchScreen.storyboard */,
+				7C99D7D41BFD669000D090E3 /* Info.plist */,
+			);
+			path = CuteDrag;
+			sourceTree = "<group>";
+		};
+		7C99D7DC1BFD669000D090E3 /* CuteDragTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C99D7DD1BFD669000D090E3 /* CuteDragTests.swift */,
+				7C99D7DF1BFD669000D090E3 /* Info.plist */,
+			);
+			path = CuteDragTests;
+			sourceTree = "<group>";
+		};
+		7C99D7E71BFD669000D090E3 /* CuteDragUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C99D7E81BFD669000D090E3 /* CuteDragUITests.swift */,
+				7C99D7EA1BFD669000D090E3 /* Info.plist */,
+			);
+			path = CuteDragUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C99D7C41BFD669000D090E3 /* CuteDrag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C99D7ED1BFD669000D090E3 /* Build configuration list for PBXNativeTarget "CuteDrag" */;
+			buildPhases = (
+				7C99D7C11BFD669000D090E3 /* Sources */,
+				7C99D7C21BFD669000D090E3 /* Frameworks */,
+				7C99D7C31BFD669000D090E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CuteDrag;
+			productName = CuteDrag;
+			productReference = 7C99D7C51BFD669000D090E3 /* CuteDrag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C99D7D81BFD669000D090E3 /* CuteDragTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C99D7F01BFD669000D090E3 /* Build configuration list for PBXNativeTarget "CuteDragTests" */;
+			buildPhases = (
+				7C99D7D51BFD669000D090E3 /* Sources */,
+				7C99D7D61BFD669000D090E3 /* Frameworks */,
+				7C99D7D71BFD669000D090E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C99D7DB1BFD669000D090E3 /* PBXTargetDependency */,
+			);
+			name = CuteDragTests;
+			productName = CuteDragTests;
+			productReference = 7C99D7D91BFD669000D090E3 /* CuteDragTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C99D7E31BFD669000D090E3 /* CuteDragUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C99D7F31BFD669000D090E3 /* Build configuration list for PBXNativeTarget "CuteDragUITests" */;
+			buildPhases = (
+				7C99D7E01BFD669000D090E3 /* Sources */,
+				7C99D7E11BFD669000D090E3 /* Frameworks */,
+				7C99D7E21BFD669000D090E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C99D7E61BFD669000D090E3 /* PBXTargetDependency */,
+			);
+			name = CuteDragUITests;
+			productName = CuteDragUITests;
+			productReference = 7C99D7E41BFD669000D090E3 /* CuteDragUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C99D7BD1BFD669000D090E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = FanYu;
+				TargetAttributes = {
+					7C99D7C41BFD669000D090E3 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					7C99D7D81BFD669000D090E3 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7C99D7C41BFD669000D090E3;
+					};
+					7C99D7E31BFD669000D090E3 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7C99D7C41BFD669000D090E3;
+					};
+				};
+			};
+			buildConfigurationList = 7C99D7C01BFD669000D090E3 /* Build configuration list for PBXProject "CuteDrag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C99D7BC1BFD669000D090E3;
+			productRefGroup = 7C99D7C61BFD669000D090E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C99D7C41BFD669000D090E3 /* CuteDrag */,
+				7C99D7D81BFD669000D090E3 /* CuteDragTests */,
+				7C99D7E31BFD669000D090E3 /* CuteDragUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C99D7C31BFD669000D090E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C99D7D31BFD669000D090E3 /* LaunchScreen.storyboard in Resources */,
+				7C99D7D01BFD669000D090E3 /* Assets.xcassets in Resources */,
+				7C99D7CE1BFD669000D090E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C99D7D71BFD669000D090E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C99D7E21BFD669000D090E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C99D7C11BFD669000D090E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C99D7F71BFD66ED00D090E3 /* CuteView.swift in Sources */,
+				7C99D7CB1BFD669000D090E3 /* ViewController.swift in Sources */,
+				7C99D7C91BFD669000D090E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C99D7D51BFD669000D090E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C99D7DE1BFD669000D090E3 /* CuteDragTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C99D7E01BFD669000D090E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C99D7E91BFD669000D090E3 /* CuteDragUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C99D7DB1BFD669000D090E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C99D7C41BFD669000D090E3 /* CuteDrag */;
+			targetProxy = 7C99D7DA1BFD669000D090E3 /* PBXContainerItemProxy */;
+		};
+		7C99D7E61BFD669000D090E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C99D7C41BFD669000D090E3 /* CuteDrag */;
+			targetProxy = 7C99D7E51BFD669000D090E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C99D7CC1BFD669000D090E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C99D7CD1BFD669000D090E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C99D7D11BFD669000D090E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C99D7D21BFD669000D090E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C99D7EB1BFD669000D090E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C99D7EC1BFD669000D090E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C99D7EE1BFD669000D090E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CuteDrag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FanYu.CuteDrag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7C99D7EF1BFD669000D090E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CuteDrag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FanYu.CuteDrag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7C99D7F11BFD669000D090E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CuteDragTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FanYu.CuteDragTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuteDrag.app/CuteDrag";
+			};
+			name = Debug;
+		};
+		7C99D7F21BFD669000D090E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CuteDragTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FanYu.CuteDragTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuteDrag.app/CuteDrag";
+			};
+			name = Release;
+		};
+		7C99D7F41BFD669000D090E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CuteDragUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FanYu.CuteDragUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CuteDrag;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7C99D7F51BFD669000D090E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CuteDragUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FanYu.CuteDragUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CuteDrag;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C99D7C01BFD669000D090E3 /* Build configuration list for PBXProject "CuteDrag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C99D7EB1BFD669000D090E3 /* Debug */,
+				7C99D7EC1BFD669000D090E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C99D7ED1BFD669000D090E3 /* Build configuration list for PBXNativeTarget "CuteDrag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C99D7EE1BFD669000D090E3 /* Debug */,
+				7C99D7EF1BFD669000D090E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7C99D7F01BFD669000D090E3 /* Build configuration list for PBXNativeTarget "CuteDragTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C99D7F11BFD669000D090E3 /* Debug */,
+				7C99D7F21BFD669000D090E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7C99D7F31BFD669000D090E3 /* Build configuration list for PBXNativeTarget "CuteDragUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C99D7F41BFD669000D090E3 /* Debug */,
+				7C99D7F51BFD669000D090E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C99D7BD1BFD669000D090E3 /* Project object */;
+}

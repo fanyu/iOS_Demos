@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EDCCinema" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IQP-fO-dMe"/>
+                        <viewControllerLayoutGuide type="bottom" id="9YO-zi-whW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moh-xm-XtX">
+                                <rect key="frame" x="26" y="70" width="268" height="428"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iew-fC-fgG">
+                                        <rect key="frame" x="0.0" y="140" width="268" height="272"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-4D-oAj">
+                                                <rect key="frame" x="59" y="28" width="160" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaB-fn-Dhh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="9ev-hm-6RT"/>
+                                                            <constraint firstAttribute="width" constant="20" id="TmB-Th-t7T"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ylb-9Q-A9I"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCd-rz-60M">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="8Iv-JS-E4u"/>
+                                                            <constraint firstAttribute="height" constant="20" id="k0d-Ic-oie"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lv7-Ha-xyI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y65-ra-ib2">
+                                                        <rect key="frame" x="56" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="Z5z-Kj-yRh"/>
+                                                            <constraint firstAttribute="height" constant="20" id="dgg-6c-utA"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mNQ-ZT-OfZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkK-1a-obi">
+                                                        <rect key="frame" x="84" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="3rP-NZ-7Yf"/>
+                                                            <constraint firstAttribute="height" constant="20" id="v9e-2l-TTi"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KQU-np-aMS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFs-IH-hKI">
+                                                        <rect key="frame" x="112" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="1l1-Tn-kvf"/>
+                                                            <constraint firstAttribute="width" constant="20" id="gkO-9u-vqV"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JcM-SD-XJZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8g-VI-DVg">
+                                                        <rect key="frame" x="140" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="9IS-DN-OD6"/>
+                                                            <constraint firstAttribute="height" constant="20" id="ruX-Im-rGs"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S1c-KV-pzO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="WaB-fn-Dhh" firstAttribute="baseline" secondItem="Y65-ra-ib2" secondAttribute="baseline" id="32c-5i-blP"/>
+                                                    <constraint firstItem="UCd-rz-60M" firstAttribute="firstBaseline" secondItem="WaB-fn-Dhh" secondAttribute="firstBaseline" id="3ep-oa-bSk"/>
+                                                    <constraint firstItem="WaB-fn-Dhh" firstAttribute="firstBaseline" secondItem="Y65-ra-ib2" secondAttribute="firstBaseline" id="3fB-CW-oTA"/>
+                                                    <constraint firstItem="UCd-rz-60M" firstAttribute="firstBaseline" secondItem="jFs-IH-hKI" secondAttribute="firstBaseline" id="40W-qD-49J"/>
+                                                    <constraint firstItem="jFs-IH-hKI" firstAttribute="firstBaseline" secondItem="GkK-1a-obi" secondAttribute="firstBaseline" id="5Ru-n0-FS6"/>
+                                                    <constraint firstItem="J8g-VI-DVg" firstAttribute="firstBaseline" secondItem="Y65-ra-ib2" secondAttribute="firstBaseline" id="6Kf-RD-5KZ"/>
+                                                    <constraint firstItem="WaB-fn-Dhh" firstAttribute="baseline" secondItem="UCd-rz-60M" secondAttribute="baseline" id="AOS-3d-JFc"/>
+                                                    <constraint firstItem="UCd-rz-60M" firstAttribute="firstBaseline" secondItem="Y65-ra-ib2" secondAttribute="firstBaseline" id="B9Z-Vg-gog"/>
+                                                    <constraint firstItem="jFs-IH-hKI" firstAttribute="baseline" secondItem="UCd-rz-60M" secondAttribute="baseline" id="EfZ-7H-QcU"/>
+                                                    <constraint firstItem="GkK-1a-obi" firstAttribute="firstBaseline" secondItem="Y65-ra-ib2" secondAttribute="firstBaseline" id="GpO-LD-cfq"/>
+                                                    <constraint firstItem="Y65-ra-ib2" firstAttribute="baseline" secondItem="GkK-1a-obi" secondAttribute="baseline" id="Gx2-Q0-n3t"/>
+                                                    <constraint firstItem="GkK-1a-obi" firstAttribute="baseline" secondItem="WaB-fn-Dhh" secondAttribute="baseline" id="JQ3-ll-Bhx"/>
+                                                    <constraint firstItem="jFs-IH-hKI" firstAttribute="firstBaseline" secondItem="Y65-ra-ib2" secondAttribute="firstBaseline" id="LcO-nQ-2nJ"/>
+                                                    <constraint firstItem="UCd-rz-60M" firstAttribute="baseline" secondItem="GkK-1a-obi" secondAttribute="baseline" id="NxI-CN-mNT"/>
+                                                    <constraint firstItem="GkK-1a-obi" firstAttribute="firstBaseline" secondItem="WaB-fn-Dhh" secondAttribute="firstBaseline" id="QCC-n9-0wW"/>
+                                                    <constraint firstItem="jFs-IH-hKI" firstAttribute="baseline" secondItem="GkK-1a-obi" secondAttribute="baseline" id="UrW-ZU-Ice"/>
+                                                    <constraint firstItem="jFs-IH-hKI" firstAttribute="firstBaseline" secondItem="J8g-VI-DVg" secondAttribute="firstBaseline" id="aG4-9z-BHG"/>
+                                                    <constraint firstItem="WaB-fn-Dhh" firstAttribute="baseline" secondItem="J8g-VI-DVg" secondAttribute="baseline" id="aIW-fd-50e"/>
+                                                    <constraint firstItem="J8g-VI-DVg" firstAttribute="baseline" secondItem="jFs-IH-hKI" secondAttribute="baseline" id="aPK-0k-Ht3"/>
+                                                    <constraint firstItem="Y65-ra-ib2" firstAttribute="baseline" secondItem="jFs-IH-hKI" secondAttribute="baseline" id="bB7-7M-Wg4"/>
+                                                    <constraint firstItem="UCd-rz-60M" firstAttribute="firstBaseline" secondItem="J8g-VI-DVg" secondAttribute="firstBaseline" id="i58-r3-xIg"/>
+                                                    <constraint firstItem="jFs-IH-hKI" firstAttribute="baseline" secondItem="WaB-fn-Dhh" secondAttribute="baseline" id="k3b-Ng-UGw"/>
+                                                    <constraint firstItem="UCd-rz-60M" firstAttribute="baseline" secondItem="Y65-ra-ib2" secondAttribute="baseline" id="llZ-6j-FfJ"/>
+                                                    <constraint firstItem="jFs-IH-hKI" firstAttribute="firstBaseline" secondItem="WaB-fn-Dhh" secondAttribute="firstBaseline" id="nkP-Tl-ZF2"/>
+                                                    <constraint firstItem="UCd-rz-60M" firstAttribute="firstBaseline" secondItem="GkK-1a-obi" secondAttribute="firstBaseline" id="s3h-tK-XXp"/>
+                                                    <constraint firstItem="GkK-1a-obi" firstAttribute="baseline" secondItem="J8g-VI-DVg" secondAttribute="baseline" id="tb6-nv-bob"/>
+                                                    <constraint firstItem="J8g-VI-DVg" firstAttribute="baseline" secondItem="Y65-ra-ib2" secondAttribute="baseline" id="v1E-18-42s"/>
+                                                    <constraint firstItem="UCd-rz-60M" firstAttribute="baseline" secondItem="J8g-VI-DVg" secondAttribute="baseline" id="vIz-EM-sOc"/>
+                                                    <constraint firstItem="GkK-1a-obi" firstAttribute="firstBaseline" secondItem="J8g-VI-DVg" secondAttribute="firstBaseline" id="vqx-RH-b0v"/>
+                                                    <constraint firstItem="WaB-fn-Dhh" firstAttribute="firstBaseline" secondItem="J8g-VI-DVg" secondAttribute="firstBaseline" id="wmG-df-tQf"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="P7k-82-3ib">
+                                                <rect key="frame" x="10" y="28" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DB1-Ay-diI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="uj2-QK-rNp"/>
+                                                            <constraint firstAttribute="height" constant="20" id="ygd-Df-Ayy"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Le-FH-Rif"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GO-Hm-zZi">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="GGC-Yo-Z6D"/>
+                                                            <constraint firstAttribute="height" constant="20" id="q0m-gR-B6e"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aFB-2i-iER"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="DB1-Ay-diI" firstAttribute="baseline" secondItem="8GO-Hm-zZi" secondAttribute="baseline" id="5vb-J2-Da3"/>
+                                                    <constraint firstItem="DB1-Ay-diI" firstAttribute="firstBaseline" secondItem="8GO-Hm-zZi" secondAttribute="firstBaseline" id="H9Z-be-fIm"/>
+                                                    <constraint firstItem="DB1-Ay-diI" firstAttribute="firstBaseline" secondItem="8GO-Hm-zZi" secondAttribute="firstBaseline" id="OzI-DL-1Kh"/>
+                                                    <constraint firstItem="8GO-Hm-zZi" firstAttribute="baseline" secondItem="DB1-Ay-diI" secondAttribute="baseline" id="gVX-c1-2Tg"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xew-jR-rfg">
+                                                <rect key="frame" x="210" y="28" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zil-yq-KEl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="Gwf-jd-Gtk"/>
+                                                            <constraint firstAttribute="width" constant="20" id="JHF-m4-ZK7"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcF-sk-ZGp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjE-O1-WdR">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="H1u-4v-70l"/>
+                                                            <constraint firstAttribute="width" constant="20" id="rOv-0I-2bv"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uhd-xs-x3O"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="qjE-O1-WdR" firstAttribute="firstBaseline" secondItem="Zil-yq-KEl" secondAttribute="firstBaseline" id="R0p-sq-Cla"/>
+                                                    <constraint firstItem="qjE-O1-WdR" firstAttribute="baseline" secondItem="Zil-yq-KEl" secondAttribute="baseline" id="chH-xs-tBZ"/>
+                                                    <constraint firstItem="qjE-O1-WdR" firstAttribute="baseline" secondItem="Zil-yq-KEl" secondAttribute="baseline" id="iM7-J9-fhF"/>
+                                                    <constraint firstItem="Zil-yq-KEl" firstAttribute="firstBaseline" secondItem="qjE-O1-WdR" secondAttribute="firstBaseline" id="sPQ-xq-BYg"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oKK-jX-F94">
+                                                <rect key="frame" x="59" y="56" width="160" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsZ-Eg-QuD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="F3k-34-Jn5"/>
+                                                            <constraint firstAttribute="width" constant="20" id="vY7-Gy-tR3"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OPm-i5-WHT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CQ-QB-ORn">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="9eb-6s-lUI"/>
+                                                            <constraint firstAttribute="height" constant="20" id="QDk-go-oOx"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JkB-Gp-nNV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoK-2k-nd7">
+                                                        <rect key="frame" x="56" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="XJD-8N-zg9"/>
+                                                            <constraint firstAttribute="width" constant="20" id="gF9-xd-hYd"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TfK-6Y-BET"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqW-xl-fRY">
+                                                        <rect key="frame" x="84" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="9g0-Dw-jG6"/>
+                                                            <constraint firstAttribute="width" constant="20" id="TwJ-ua-yjk"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pk0-HV-8rF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOf-TG-MDf">
+                                                        <rect key="frame" x="112" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="G8B-LW-zYa"/>
+                                                            <constraint firstAttribute="width" constant="20" id="cfO-Tn-vuD"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Otc-Eg-TUO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MR3-Hv-hRP">
+                                                        <rect key="frame" x="140" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="gWf-lZ-8mq"/>
+                                                            <constraint firstAttribute="height" constant="20" id="xvp-2U-yYl"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1m-MG-lWv"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="WOf-TG-MDf" firstAttribute="baseline" secondItem="7CQ-QB-ORn" secondAttribute="baseline" id="5FG-Mw-h8Z"/>
+                                                    <constraint firstItem="WOf-TG-MDf" firstAttribute="firstBaseline" secondItem="PqW-xl-fRY" secondAttribute="firstBaseline" id="6hA-yX-DRG"/>
+                                                    <constraint firstItem="NsZ-Eg-QuD" firstAttribute="baseline" secondItem="WOf-TG-MDf" secondAttribute="baseline" id="CoG-SA-cQl"/>
+                                                    <constraint firstItem="MR3-Hv-hRP" firstAttribute="firstBaseline" secondItem="PqW-xl-fRY" secondAttribute="firstBaseline" id="GBH-gY-uM1"/>
+                                                    <constraint firstItem="MR3-Hv-hRP" firstAttribute="baseline" secondItem="7CQ-QB-ORn" secondAttribute="baseline" id="H1X-mK-xcu"/>
+                                                    <constraint firstItem="MR3-Hv-hRP" firstAttribute="firstBaseline" secondItem="7CQ-QB-ORn" secondAttribute="firstBaseline" id="HN0-dJ-kdh"/>
+                                                    <constraint firstItem="MR3-Hv-hRP" firstAttribute="baseline" secondItem="NsZ-Eg-QuD" secondAttribute="baseline" id="Hpb-uq-b4Z"/>
+                                                    <constraint firstItem="OoK-2k-nd7" firstAttribute="baseline" secondItem="7CQ-QB-ORn" secondAttribute="baseline" id="Ihe-hh-1Zk"/>
+                                                    <constraint firstItem="NsZ-Eg-QuD" firstAttribute="firstBaseline" secondItem="MR3-Hv-hRP" secondAttribute="firstBaseline" id="LW6-46-Xhz"/>
+                                                    <constraint firstItem="NsZ-Eg-QuD" firstAttribute="firstBaseline" secondItem="PqW-xl-fRY" secondAttribute="firstBaseline" id="OkA-H8-Xrp"/>
+                                                    <constraint firstItem="PqW-xl-fRY" firstAttribute="baseline" secondItem="MR3-Hv-hRP" secondAttribute="baseline" id="PJr-aF-dP3"/>
+                                                    <constraint firstItem="OoK-2k-nd7" firstAttribute="firstBaseline" secondItem="PqW-xl-fRY" secondAttribute="firstBaseline" id="Qpy-mr-n0Z"/>
+                                                    <constraint firstItem="7CQ-QB-ORn" firstAttribute="baseline" secondItem="PqW-xl-fRY" secondAttribute="baseline" id="ZaZ-tH-Mo3"/>
+                                                    <constraint firstItem="OoK-2k-nd7" firstAttribute="firstBaseline" secondItem="WOf-TG-MDf" secondAttribute="firstBaseline" id="ZhQ-YQ-kAr"/>
+                                                    <constraint firstItem="MR3-Hv-hRP" firstAttribute="firstBaseline" secondItem="WOf-TG-MDf" secondAttribute="firstBaseline" id="a8W-TC-jbS"/>
+                                                    <constraint firstItem="NsZ-Eg-QuD" firstAttribute="firstBaseline" secondItem="7CQ-QB-ORn" secondAttribute="firstBaseline" id="aaZ-4e-P8T"/>
+                                                    <constraint firstItem="NsZ-Eg-QuD" firstAttribute="baseline" secondItem="7CQ-QB-ORn" secondAttribute="baseline" id="bC8-Rm-ZAY"/>
+                                                    <constraint firstItem="OoK-2k-nd7" firstAttribute="firstBaseline" secondItem="MR3-Hv-hRP" secondAttribute="firstBaseline" id="bYw-Qb-utJ"/>
+                                                    <constraint firstItem="WOf-TG-MDf" firstAttribute="baseline" secondItem="PqW-xl-fRY" secondAttribute="baseline" id="bzX-Y5-6gQ"/>
+                                                    <constraint firstItem="NsZ-Eg-QuD" firstAttribute="baseline" secondItem="PqW-xl-fRY" secondAttribute="baseline" id="dBr-l1-c1h"/>
+                                                    <constraint firstItem="MR3-Hv-hRP" firstAttribute="baseline" secondItem="OoK-2k-nd7" secondAttribute="baseline" id="dII-MF-WcU"/>
+                                                    <constraint firstItem="7CQ-QB-ORn" firstAttribute="firstBaseline" secondItem="PqW-xl-fRY" secondAttribute="firstBaseline" id="fdX-PW-CSp"/>
+                                                    <constraint firstItem="OoK-2k-nd7" firstAttribute="baseline" secondItem="NsZ-Eg-QuD" secondAttribute="baseline" id="mEz-1z-xpQ"/>
+                                                    <constraint firstItem="OoK-2k-nd7" firstAttribute="firstBaseline" secondItem="7CQ-QB-ORn" secondAttribute="firstBaseline" id="q40-In-BvU"/>
+                                                    <constraint firstItem="NsZ-Eg-QuD" firstAttribute="firstBaseline" secondItem="WOf-TG-MDf" secondAttribute="firstBaseline" id="qKk-1A-z0S"/>
+                                                    <constraint firstItem="OoK-2k-nd7" firstAttribute="baseline" secondItem="WOf-TG-MDf" secondAttribute="baseline" id="qnh-3y-g4w"/>
+                                                    <constraint firstItem="OoK-2k-nd7" firstAttribute="baseline" secondItem="PqW-xl-fRY" secondAttribute="baseline" id="uTs-Ma-9BE"/>
+                                                    <constraint firstItem="7CQ-QB-ORn" firstAttribute="firstBaseline" secondItem="WOf-TG-MDf" secondAttribute="firstBaseline" id="uxV-Y1-WaK"/>
+                                                    <constraint firstItem="OoK-2k-nd7" firstAttribute="firstBaseline" secondItem="NsZ-Eg-QuD" secondAttribute="firstBaseline" id="wpb-3V-Kt4"/>
+                                                    <constraint firstItem="MR3-Hv-hRP" firstAttribute="baseline" secondItem="WOf-TG-MDf" secondAttribute="baseline" id="xBe-zb-677"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="noQ-12-NAH">
+                                                <rect key="frame" x="59" y="84" width="160" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1m-TS-1CA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="P4g-qT-6rw"/>
+                                                            <constraint firstAttribute="width" constant="20" id="TSn-Je-SiS"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhR-Eh-oQb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6U-7J-avI">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="Eof-M2-QcR"/>
+                                                            <constraint firstAttribute="width" constant="20" id="wtJ-KU-NKl"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSe-jl-bRO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdC-E9-wJP">
+                                                        <rect key="frame" x="56" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="6dX-Sw-qug"/>
+                                                            <constraint firstAttribute="height" constant="20" id="odd-Oe-yjC"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ywG-gr-siP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWP-WQ-fe5">
+                                                        <rect key="frame" x="84" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="0dh-cd-fVg"/>
+                                                            <constraint firstAttribute="height" constant="20" id="IQd-Ta-x0C"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7EA-Sa-OJO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-c2-cnv">
+                                                        <rect key="frame" x="112" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="UIi-lH-7QE"/>
+                                                            <constraint firstAttribute="height" constant="20" id="kXc-Ky-Kyn"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gqn-CD-ggZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nge-FN-C5L">
+                                                        <rect key="frame" x="140" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="BZV-Je-sRZ"/>
+                                                            <constraint firstAttribute="width" constant="20" id="QVC-ep-gl1"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xcV-e1-dLK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="Q6U-7J-avI" firstAttribute="firstBaseline" secondItem="U1m-TS-1CA" secondAttribute="firstBaseline" id="013-Xf-N0a"/>
+                                                    <constraint firstItem="UWP-WQ-fe5" firstAttribute="baseline" secondItem="gh1-c2-cnv" secondAttribute="baseline" id="0Yg-h7-Zd0"/>
+                                                    <constraint firstItem="gh1-c2-cnv" firstAttribute="firstBaseline" secondItem="Q6U-7J-avI" secondAttribute="firstBaseline" id="4t8-Sq-8Lx"/>
+                                                    <constraint firstItem="gh1-c2-cnv" firstAttribute="firstBaseline" secondItem="U1m-TS-1CA" secondAttribute="firstBaseline" id="AiN-Ul-KkZ"/>
+                                                    <constraint firstItem="QdC-E9-wJP" firstAttribute="baseline" secondItem="Q6U-7J-avI" secondAttribute="baseline" id="CBu-WR-16d"/>
+                                                    <constraint firstItem="Nge-FN-C5L" firstAttribute="firstBaseline" secondItem="QdC-E9-wJP" secondAttribute="firstBaseline" id="CM5-Ka-ghB"/>
+                                                    <constraint firstItem="Q6U-7J-avI" firstAttribute="firstBaseline" secondItem="Nge-FN-C5L" secondAttribute="firstBaseline" id="F0B-sC-hbe"/>
+                                                    <constraint firstItem="gh1-c2-cnv" firstAttribute="firstBaseline" secondItem="UWP-WQ-fe5" secondAttribute="firstBaseline" id="ILt-LJ-khz"/>
+                                                    <constraint firstItem="QdC-E9-wJP" firstAttribute="firstBaseline" secondItem="gh1-c2-cnv" secondAttribute="firstBaseline" id="JOb-rd-t1N"/>
+                                                    <constraint firstItem="UWP-WQ-fe5" firstAttribute="firstBaseline" secondItem="Q6U-7J-avI" secondAttribute="firstBaseline" id="KLw-48-lde"/>
+                                                    <constraint firstItem="Nge-FN-C5L" firstAttribute="baseline" secondItem="QdC-E9-wJP" secondAttribute="baseline" id="Lmc-4e-vSQ"/>
+                                                    <constraint firstItem="UWP-WQ-fe5" firstAttribute="firstBaseline" secondItem="Nge-FN-C5L" secondAttribute="firstBaseline" id="OBp-S1-dK3"/>
+                                                    <constraint firstItem="gh1-c2-cnv" firstAttribute="baseline" secondItem="Nge-FN-C5L" secondAttribute="baseline" id="PTM-Rk-ucY"/>
+                                                    <constraint firstItem="Nge-FN-C5L" firstAttribute="firstBaseline" secondItem="gh1-c2-cnv" secondAttribute="firstBaseline" id="Xvj-Fp-rDf"/>
+                                                    <constraint firstItem="Q6U-7J-avI" firstAttribute="baseline" secondItem="UWP-WQ-fe5" secondAttribute="baseline" id="YCk-4K-sVD"/>
+                                                    <constraint firstItem="gh1-c2-cnv" firstAttribute="baseline" secondItem="U1m-TS-1CA" secondAttribute="baseline" id="YbB-Gj-anq"/>
+                                                    <constraint firstItem="QdC-E9-wJP" firstAttribute="baseline" secondItem="UWP-WQ-fe5" secondAttribute="baseline" id="Ymd-7b-CCt"/>
+                                                    <constraint firstItem="QdC-E9-wJP" firstAttribute="baseline" secondItem="U1m-TS-1CA" secondAttribute="baseline" id="cqB-9f-spI"/>
+                                                    <constraint firstItem="Nge-FN-C5L" firstAttribute="baseline" secondItem="UWP-WQ-fe5" secondAttribute="baseline" id="ews-X9-h2r"/>
+                                                    <constraint firstItem="QdC-E9-wJP" firstAttribute="firstBaseline" secondItem="UWP-WQ-fe5" secondAttribute="firstBaseline" id="fsh-Kg-5Pt"/>
+                                                    <constraint firstItem="UWP-WQ-fe5" firstAttribute="baseline" secondItem="U1m-TS-1CA" secondAttribute="baseline" id="haI-5L-kPN"/>
+                                                    <constraint firstItem="QdC-E9-wJP" firstAttribute="baseline" secondItem="gh1-c2-cnv" secondAttribute="baseline" id="hek-vU-FrC"/>
+                                                    <constraint firstItem="U1m-TS-1CA" firstAttribute="baseline" secondItem="Nge-FN-C5L" secondAttribute="baseline" id="jVV-Tm-Znw"/>
+                                                    <constraint firstItem="Q6U-7J-avI" firstAttribute="baseline" secondItem="Nge-FN-C5L" secondAttribute="baseline" id="k9K-cF-CbN"/>
+                                                    <constraint firstItem="U1m-TS-1CA" firstAttribute="firstBaseline" secondItem="Nge-FN-C5L" secondAttribute="firstBaseline" id="kI0-ub-TvC"/>
+                                                    <constraint firstItem="QdC-E9-wJP" firstAttribute="firstBaseline" secondItem="U1m-TS-1CA" secondAttribute="firstBaseline" id="nK4-Te-CiY"/>
+                                                    <constraint firstItem="U1m-TS-1CA" firstAttribute="baseline" secondItem="Q6U-7J-avI" secondAttribute="baseline" id="nch-94-KAw"/>
+                                                    <constraint firstItem="Q6U-7J-avI" firstAttribute="baseline" secondItem="gh1-c2-cnv" secondAttribute="baseline" id="oQv-f5-qVu"/>
+                                                    <constraint firstItem="QdC-E9-wJP" firstAttribute="firstBaseline" secondItem="Q6U-7J-avI" secondAttribute="firstBaseline" id="pT5-XZ-0I2"/>
+                                                    <constraint firstItem="UWP-WQ-fe5" firstAttribute="firstBaseline" secondItem="U1m-TS-1CA" secondAttribute="firstBaseline" id="xlm-RD-M0v"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="28G-Yb-Lrf">
+                                                <rect key="frame" x="59" y="112" width="160" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzN-kw-JGU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="8GZ-h4-ywd"/>
+                                                            <constraint firstAttribute="height" constant="20" id="XYH-HP-VNj"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9o-UL-NPM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aP-cG-KYg">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="5t8-FC-d3N"/>
+                                                            <constraint firstAttribute="height" constant="20" id="U1P-0Q-yd6"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bnh-Q8-6RF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjX-av-7fY">
+                                                        <rect key="frame" x="56" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="0qD-9R-DcY"/>
+                                                            <constraint firstAttribute="width" constant="20" id="FXQ-Nb-Nqb"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URP-GY-5oX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jl1-m4-Sh7">
+                                                        <rect key="frame" x="84" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="Dhz-o8-mbe"/>
+                                                            <constraint firstAttribute="width" constant="20" id="VvW-zz-Kvo"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wrf-3C-irH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHs-gc-cQc">
+                                                        <rect key="frame" x="112" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="6ms-11-4OV"/>
+                                                            <constraint firstAttribute="height" constant="20" id="cxu-bu-xNr"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U2L-BK-abX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZL-2T-IHT">
+                                                        <rect key="frame" x="140" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="FhB-hm-r7h"/>
+                                                            <constraint firstAttribute="width" constant="20" id="O1N-tu-Y8D"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajp-J5-LeP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="rzN-kw-JGU" firstAttribute="baseline" secondItem="jl1-m4-Sh7" secondAttribute="baseline" id="04j-QT-H4o"/>
+                                                    <constraint firstItem="tZL-2T-IHT" firstAttribute="firstBaseline" secondItem="dHs-gc-cQc" secondAttribute="firstBaseline" id="2on-P3-E1D"/>
+                                                    <constraint firstItem="dHs-gc-cQc" firstAttribute="firstBaseline" secondItem="rzN-kw-JGU" secondAttribute="firstBaseline" id="A3M-n0-jPL"/>
+                                                    <constraint firstItem="dHs-gc-cQc" firstAttribute="baseline" secondItem="wjX-av-7fY" secondAttribute="baseline" id="B3t-cI-Rhi"/>
+                                                    <constraint firstItem="8aP-cG-KYg" firstAttribute="firstBaseline" secondItem="tZL-2T-IHT" secondAttribute="firstBaseline" id="CDT-vY-7iB"/>
+                                                    <constraint firstItem="8aP-cG-KYg" firstAttribute="firstBaseline" secondItem="wjX-av-7fY" secondAttribute="firstBaseline" id="DuG-Xt-noP"/>
+                                                    <constraint firstItem="wjX-av-7fY" firstAttribute="firstBaseline" secondItem="tZL-2T-IHT" secondAttribute="firstBaseline" id="FHE-Kf-e2u"/>
+                                                    <constraint firstItem="dHs-gc-cQc" firstAttribute="firstBaseline" secondItem="8aP-cG-KYg" secondAttribute="firstBaseline" id="OhM-Gz-yCD"/>
+                                                    <constraint firstItem="wjX-av-7fY" firstAttribute="baseline" secondItem="jl1-m4-Sh7" secondAttribute="baseline" id="RXp-v6-eGH"/>
+                                                    <constraint firstItem="tZL-2T-IHT" firstAttribute="baseline" secondItem="8aP-cG-KYg" secondAttribute="baseline" id="SD4-V5-68S"/>
+                                                    <constraint firstItem="rzN-kw-JGU" firstAttribute="firstBaseline" secondItem="jl1-m4-Sh7" secondAttribute="firstBaseline" id="Tsn-q1-TZg"/>
+                                                    <constraint firstItem="dHs-gc-cQc" firstAttribute="firstBaseline" secondItem="wjX-av-7fY" secondAttribute="firstBaseline" id="WCX-ri-8wU"/>
+                                                    <constraint firstItem="dHs-gc-cQc" firstAttribute="baseline" secondItem="jl1-m4-Sh7" secondAttribute="baseline" id="Wag-wb-ltj"/>
+                                                    <constraint firstItem="tZL-2T-IHT" firstAttribute="baseline" secondItem="dHs-gc-cQc" secondAttribute="baseline" id="aOO-Na-TOz"/>
+                                                    <constraint firstItem="tZL-2T-IHT" firstAttribute="baseline" secondItem="jl1-m4-Sh7" secondAttribute="baseline" id="aSr-BO-oSe"/>
+                                                    <constraint firstItem="8aP-cG-KYg" firstAttribute="baseline" secondItem="dHs-gc-cQc" secondAttribute="baseline" id="b7g-cZ-hDC"/>
+                                                    <constraint firstItem="rzN-kw-JGU" firstAttribute="baseline" secondItem="dHs-gc-cQc" secondAttribute="baseline" id="bbu-qQ-EKV"/>
+                                                    <constraint firstItem="rzN-kw-JGU" firstAttribute="baseline" secondItem="tZL-2T-IHT" secondAttribute="baseline" id="dYx-Qu-qMK"/>
+                                                    <constraint firstItem="8aP-cG-KYg" firstAttribute="firstBaseline" secondItem="rzN-kw-JGU" secondAttribute="firstBaseline" id="gES-do-OFf"/>
+                                                    <constraint firstItem="8aP-cG-KYg" firstAttribute="firstBaseline" secondItem="jl1-m4-Sh7" secondAttribute="firstBaseline" id="gtU-eX-Rgk"/>
+                                                    <constraint firstItem="jl1-m4-Sh7" firstAttribute="firstBaseline" secondItem="tZL-2T-IHT" secondAttribute="firstBaseline" id="hrL-Nq-pcg"/>
+                                                    <constraint firstItem="8aP-cG-KYg" firstAttribute="baseline" secondItem="wjX-av-7fY" secondAttribute="baseline" id="hwg-YN-EO5"/>
+                                                    <constraint firstItem="8aP-cG-KYg" firstAttribute="baseline" secondItem="jl1-m4-Sh7" secondAttribute="baseline" id="hxL-yT-ILu"/>
+                                                    <constraint firstItem="rzN-kw-JGU" firstAttribute="baseline" secondItem="wjX-av-7fY" secondAttribute="baseline" id="kE7-2n-iev"/>
+                                                    <constraint firstItem="wjX-av-7fY" firstAttribute="firstBaseline" secondItem="jl1-m4-Sh7" secondAttribute="firstBaseline" id="lXy-Rq-dOY"/>
+                                                    <constraint firstItem="dHs-gc-cQc" firstAttribute="firstBaseline" secondItem="jl1-m4-Sh7" secondAttribute="firstBaseline" id="m4O-gB-tUQ"/>
+                                                    <constraint firstItem="rzN-kw-JGU" firstAttribute="baseline" secondItem="8aP-cG-KYg" secondAttribute="baseline" id="ndc-Up-ef1"/>
+                                                    <constraint firstItem="rzN-kw-JGU" firstAttribute="firstBaseline" secondItem="tZL-2T-IHT" secondAttribute="firstBaseline" id="pdm-qC-lhM"/>
+                                                    <constraint firstItem="rzN-kw-JGU" firstAttribute="firstBaseline" secondItem="wjX-av-7fY" secondAttribute="firstBaseline" id="sl1-Xk-GIU"/>
+                                                    <constraint firstItem="tZL-2T-IHT" firstAttribute="baseline" secondItem="wjX-av-7fY" secondAttribute="baseline" id="url-FX-oFz"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ixi-VP-GMd">
+                                                <rect key="frame" x="59" y="140" width="160" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jn0-ZE-CY5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="4tf-Xm-Dp1"/>
+                                                            <constraint firstAttribute="height" constant="20" id="N8u-dR-1Kf"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VMb-E4-D7F"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xz9-dy-ehg">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="6mq-Ex-HNY"/>
+                                                            <constraint firstAttribute="height" constant="20" id="S7U-Cg-Zq2"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YdQ-I8-Jlk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RR1-uJ-NwN">
+                                                        <rect key="frame" x="56" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="F30-Aw-2Sx"/>
+                                                            <constraint firstAttribute="width" constant="20" id="qwe-0F-TzI"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLQ-0n-BAG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZR-96-zdg">
+                                                        <rect key="frame" x="84" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="roB-th-gpf"/>
+                                                            <constraint firstAttribute="height" constant="20" id="zNK-xl-i1H"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SER-bH-Gzd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0o-SZ-zzR">
+                                                        <rect key="frame" x="112" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="0pJ-Jt-NXG"/>
+                                                            <constraint firstAttribute="width" constant="20" id="QKg-B0-MTD"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="in4-cx-46c"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHX-It-4mK">
+                                                        <rect key="frame" x="140" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="84D-ag-acw"/>
+                                                            <constraint firstAttribute="height" constant="20" id="qu6-gB-pBS"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNL-AZ-JwK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="t0o-SZ-zzR" firstAttribute="firstBaseline" secondItem="RR1-uJ-NwN" secondAttribute="firstBaseline" id="0nq-xQ-TsS"/>
+                                                    <constraint firstItem="t0o-SZ-zzR" firstAttribute="baseline" secondItem="WHX-It-4mK" secondAttribute="baseline" id="10m-3Z-uG4"/>
+                                                    <constraint firstItem="RZR-96-zdg" firstAttribute="firstBaseline" secondItem="WHX-It-4mK" secondAttribute="firstBaseline" id="3NR-CT-8A2"/>
+                                                    <constraint firstItem="RZR-96-zdg" firstAttribute="baseline" secondItem="jn0-ZE-CY5" secondAttribute="baseline" id="4BM-tP-js6"/>
+                                                    <constraint firstItem="RZR-96-zdg" firstAttribute="baseline" secondItem="WHX-It-4mK" secondAttribute="baseline" id="4Lz-vO-wPa"/>
+                                                    <constraint firstItem="xz9-dy-ehg" firstAttribute="firstBaseline" secondItem="RZR-96-zdg" secondAttribute="firstBaseline" id="9ln-od-hug"/>
+                                                    <constraint firstItem="xz9-dy-ehg" firstAttribute="firstBaseline" secondItem="RR1-uJ-NwN" secondAttribute="firstBaseline" id="AbJ-UJ-qab"/>
+                                                    <constraint firstItem="WHX-It-4mK" firstAttribute="firstBaseline" secondItem="RR1-uJ-NwN" secondAttribute="firstBaseline" id="DXr-R4-bug"/>
+                                                    <constraint firstItem="WHX-It-4mK" firstAttribute="baseline" secondItem="jn0-ZE-CY5" secondAttribute="baseline" id="Dbd-ds-8iK"/>
+                                                    <constraint firstItem="WHX-It-4mK" firstAttribute="firstBaseline" secondItem="xz9-dy-ehg" secondAttribute="firstBaseline" id="JJR-l2-N4w"/>
+                                                    <constraint firstItem="RZR-96-zdg" firstAttribute="firstBaseline" secondItem="jn0-ZE-CY5" secondAttribute="firstBaseline" id="Mye-bS-63x"/>
+                                                    <constraint firstItem="jn0-ZE-CY5" firstAttribute="firstBaseline" secondItem="t0o-SZ-zzR" secondAttribute="firstBaseline" id="QpY-Gf-vSS"/>
+                                                    <constraint firstItem="t0o-SZ-zzR" firstAttribute="firstBaseline" secondItem="WHX-It-4mK" secondAttribute="firstBaseline" id="Sce-4O-nAC"/>
+                                                    <constraint firstItem="t0o-SZ-zzR" firstAttribute="firstBaseline" secondItem="RZR-96-zdg" secondAttribute="firstBaseline" id="T8l-Vl-GhW"/>
+                                                    <constraint firstItem="xz9-dy-ehg" firstAttribute="firstBaseline" secondItem="t0o-SZ-zzR" secondAttribute="firstBaseline" id="Vqr-dA-5qn"/>
+                                                    <constraint firstItem="WHX-It-4mK" firstAttribute="baseline" secondItem="RR1-uJ-NwN" secondAttribute="baseline" id="aHq-xD-dvX"/>
+                                                    <constraint firstItem="RZR-96-zdg" firstAttribute="baseline" secondItem="t0o-SZ-zzR" secondAttribute="baseline" id="bQE-Y8-QRb"/>
+                                                    <constraint firstItem="WHX-It-4mK" firstAttribute="firstBaseline" secondItem="jn0-ZE-CY5" secondAttribute="firstBaseline" id="c0V-0H-VyZ"/>
+                                                    <constraint firstItem="xz9-dy-ehg" firstAttribute="baseline" secondItem="RR1-uJ-NwN" secondAttribute="baseline" id="ccK-np-tH0"/>
+                                                    <constraint firstItem="RZR-96-zdg" firstAttribute="baseline" secondItem="RR1-uJ-NwN" secondAttribute="baseline" id="gCL-zj-o2q"/>
+                                                    <constraint firstItem="xz9-dy-ehg" firstAttribute="baseline" secondItem="RZR-96-zdg" secondAttribute="baseline" id="kXu-XD-XLH"/>
+                                                    <constraint firstItem="RZR-96-zdg" firstAttribute="firstBaseline" secondItem="RR1-uJ-NwN" secondAttribute="firstBaseline" id="kwa-ch-PdJ"/>
+                                                    <constraint firstItem="RR1-uJ-NwN" firstAttribute="baseline" secondItem="t0o-SZ-zzR" secondAttribute="baseline" id="l3e-MG-taw"/>
+                                                    <constraint firstItem="xz9-dy-ehg" firstAttribute="baseline" secondItem="jn0-ZE-CY5" secondAttribute="baseline" id="mxk-er-eyl"/>
+                                                    <constraint firstItem="RR1-uJ-NwN" firstAttribute="baseline" secondItem="jn0-ZE-CY5" secondAttribute="baseline" id="qMf-zB-FBH"/>
+                                                    <constraint firstItem="WHX-It-4mK" firstAttribute="baseline" secondItem="xz9-dy-ehg" secondAttribute="baseline" id="t1i-2b-rIP"/>
+                                                    <constraint firstItem="xz9-dy-ehg" firstAttribute="baseline" secondItem="t0o-SZ-zzR" secondAttribute="baseline" id="tT2-Cg-2H7"/>
+                                                    <constraint firstItem="xz9-dy-ehg" firstAttribute="firstBaseline" secondItem="jn0-ZE-CY5" secondAttribute="firstBaseline" id="uae-HY-go2"/>
+                                                    <constraint firstItem="jn0-ZE-CY5" firstAttribute="baseline" secondItem="t0o-SZ-zzR" secondAttribute="baseline" id="vGI-FR-dBK"/>
+                                                    <constraint firstItem="jn0-ZE-CY5" firstAttribute="firstBaseline" secondItem="RR1-uJ-NwN" secondAttribute="firstBaseline" id="wI9-mX-YFM"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u2C-Ky-O89">
+                                                <rect key="frame" x="59" y="168" width="160" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUx-jg-5LI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="5bV-ca-rM5"/>
+                                                            <constraint firstAttribute="width" constant="20" id="EU2-bw-Mt5"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5E-xG-shJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaH-yO-mQM">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="Aov-RN-c1R"/>
+                                                            <constraint firstAttribute="height" constant="20" id="IS3-qL-XbK"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dvh-sa-Ztg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yi-NS-4ff">
+                                                        <rect key="frame" x="56" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="QMK-7d-ScY"/>
+                                                            <constraint firstAttribute="width" constant="20" id="gHW-nw-PNU"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sI-3i-ys9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fer-cM-Dog">
+                                                        <rect key="frame" x="84" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="mcy-XZ-NPn"/>
+                                                            <constraint firstAttribute="width" constant="20" id="u5a-6w-BRY"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUy-iJ-zNp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCw-Qz-j2U">
+                                                        <rect key="frame" x="112" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="Shh-R1-jse"/>
+                                                            <constraint firstAttribute="width" constant="20" id="sX4-ES-7e1"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bq-RK-1F7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVx-bf-rwg">
+                                                        <rect key="frame" x="140" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="LoU-je-nfY"/>
+                                                            <constraint firstAttribute="width" constant="20" id="xJO-EQ-3J4"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYh-M3-x3q"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="rVx-bf-rwg" firstAttribute="baseline" secondItem="qCw-Qz-j2U" secondAttribute="baseline" id="2Yx-kg-5iI"/>
+                                                    <constraint firstItem="0yi-NS-4ff" firstAttribute="baseline" secondItem="DaH-yO-mQM" secondAttribute="baseline" id="3oB-x6-kq5"/>
+                                                    <constraint firstItem="fer-cM-Dog" firstAttribute="firstBaseline" secondItem="qCw-Qz-j2U" secondAttribute="firstBaseline" id="5i5-In-6Ct"/>
+                                                    <constraint firstItem="qCw-Qz-j2U" firstAttribute="baseline" secondItem="0yi-NS-4ff" secondAttribute="baseline" id="7la-Ek-qF6"/>
+                                                    <constraint firstItem="DaH-yO-mQM" firstAttribute="firstBaseline" secondItem="qCw-Qz-j2U" secondAttribute="firstBaseline" id="8MY-BN-dnL"/>
+                                                    <constraint firstItem="qCw-Qz-j2U" firstAttribute="baseline" secondItem="fer-cM-Dog" secondAttribute="baseline" id="9Cr-Gt-E58"/>
+                                                    <constraint firstItem="qCw-Qz-j2U" firstAttribute="baseline" secondItem="NUx-jg-5LI" secondAttribute="baseline" id="AQO-fJ-ngk"/>
+                                                    <constraint firstItem="NUx-jg-5LI" firstAttribute="firstBaseline" secondItem="0yi-NS-4ff" secondAttribute="firstBaseline" id="Ddh-qD-r6t"/>
+                                                    <constraint firstItem="0yi-NS-4ff" firstAttribute="firstBaseline" secondItem="fer-cM-Dog" secondAttribute="firstBaseline" id="H9Q-ps-Iu4"/>
+                                                    <constraint firstItem="rVx-bf-rwg" firstAttribute="baseline" secondItem="0yi-NS-4ff" secondAttribute="baseline" id="Jgf-hK-eac"/>
+                                                    <constraint firstItem="DaH-yO-mQM" firstAttribute="firstBaseline" secondItem="rVx-bf-rwg" secondAttribute="firstBaseline" id="KLV-Qd-AhE"/>
+                                                    <constraint firstItem="0yi-NS-4ff" firstAttribute="baseline" secondItem="NUx-jg-5LI" secondAttribute="baseline" id="KaG-EH-6Hr"/>
+                                                    <constraint firstItem="fer-cM-Dog" firstAttribute="baseline" secondItem="0yi-NS-4ff" secondAttribute="baseline" id="Mo5-z6-puM"/>
+                                                    <constraint firstItem="rVx-bf-rwg" firstAttribute="baseline" secondItem="fer-cM-Dog" secondAttribute="baseline" id="MsG-vf-ge6"/>
+                                                    <constraint firstItem="0yi-NS-4ff" firstAttribute="firstBaseline" secondItem="rVx-bf-rwg" secondAttribute="firstBaseline" id="UJt-L5-Tet"/>
+                                                    <constraint firstItem="DaH-yO-mQM" firstAttribute="baseline" secondItem="NUx-jg-5LI" secondAttribute="baseline" id="aVx-Ba-cAK"/>
+                                                    <constraint firstItem="fer-cM-Dog" firstAttribute="firstBaseline" secondItem="NUx-jg-5LI" secondAttribute="firstBaseline" id="b4R-bw-NBF"/>
+                                                    <constraint firstItem="fer-cM-Dog" firstAttribute="firstBaseline" secondItem="rVx-bf-rwg" secondAttribute="firstBaseline" id="box-yr-yqm"/>
+                                                    <constraint firstItem="NUx-jg-5LI" firstAttribute="baseline" secondItem="fer-cM-Dog" secondAttribute="baseline" id="d7z-vj-Gwh"/>
+                                                    <constraint firstItem="0yi-NS-4ff" firstAttribute="firstBaseline" secondItem="qCw-Qz-j2U" secondAttribute="firstBaseline" id="dbf-Wy-eh1"/>
+                                                    <constraint firstItem="DaH-yO-mQM" firstAttribute="firstBaseline" secondItem="0yi-NS-4ff" secondAttribute="firstBaseline" id="drT-bQ-HEj"/>
+                                                    <constraint firstItem="DaH-yO-mQM" firstAttribute="baseline" secondItem="rVx-bf-rwg" secondAttribute="baseline" id="gNx-sa-vuM"/>
+                                                    <constraint firstItem="NUx-jg-5LI" firstAttribute="firstBaseline" secondItem="rVx-bf-rwg" secondAttribute="firstBaseline" id="hhH-EV-3KH"/>
+                                                    <constraint firstItem="rVx-bf-rwg" firstAttribute="firstBaseline" secondItem="qCw-Qz-j2U" secondAttribute="firstBaseline" id="jtg-VN-cCG"/>
+                                                    <constraint firstItem="NUx-jg-5LI" firstAttribute="baseline" secondItem="rVx-bf-rwg" secondAttribute="baseline" id="k1p-p5-RAW"/>
+                                                    <constraint firstItem="DaH-yO-mQM" firstAttribute="firstBaseline" secondItem="fer-cM-Dog" secondAttribute="firstBaseline" id="l1I-X6-g03"/>
+                                                    <constraint firstItem="DaH-yO-mQM" firstAttribute="baseline" secondItem="fer-cM-Dog" secondAttribute="baseline" id="n1b-X9-Fs8"/>
+                                                    <constraint firstItem="qCw-Qz-j2U" firstAttribute="firstBaseline" secondItem="NUx-jg-5LI" secondAttribute="firstBaseline" id="roZ-TW-hMX"/>
+                                                    <constraint firstItem="qCw-Qz-j2U" firstAttribute="baseline" secondItem="DaH-yO-mQM" secondAttribute="baseline" id="tQ2-WG-eoy"/>
+                                                    <constraint firstItem="DaH-yO-mQM" firstAttribute="firstBaseline" secondItem="NUx-jg-5LI" secondAttribute="firstBaseline" id="zAK-gK-8hN"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="T1W-PK-Keg">
+                                                <rect key="frame" x="59" y="196" width="160" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-oW-bwO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="9Jv-dy-Xb1"/>
+                                                            <constraint firstAttribute="width" constant="20" id="m5o-Lw-pBr"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPZ-Xx-PXD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScM-IZ-fmb">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="V8d-HG-7Cg"/>
+                                                            <constraint firstAttribute="width" constant="20" id="fSv-Ze-Jtx"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZ2-Yw-oYm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM0-o5-zc8">
+                                                        <rect key="frame" x="56" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="Xxu-6B-PNg"/>
+                                                            <constraint firstAttribute="width" constant="20" id="pEi-cy-5Ys"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Bf-Uh-wTr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbL-sI-c4F">
+                                                        <rect key="frame" x="84" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="cBq-hv-XBg"/>
+                                                            <constraint firstAttribute="width" constant="20" id="ehp-cJ-Hv5"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JZF-GL-jdA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fd-Sl-cOq">
+                                                        <rect key="frame" x="112" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="NX7-Nb-aEG"/>
+                                                            <constraint firstAttribute="height" constant="20" id="hgA-kh-zPc"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wup-0n-E49"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmx-Mp-Hai">
+                                                        <rect key="frame" x="140" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="leT-C7-C0k"/>
+                                                            <constraint firstAttribute="width" constant="20" id="xn6-iH-UdY"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCA-CS-uOQ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="nmx-Mp-Hai" firstAttribute="baseline" secondItem="Lpd-oW-bwO" secondAttribute="baseline" id="0JG-ag-hr3"/>
+                                                    <constraint firstItem="FM0-o5-zc8" firstAttribute="firstBaseline" secondItem="Lpd-oW-bwO" secondAttribute="firstBaseline" id="6QS-g0-mb1"/>
+                                                    <constraint firstItem="nmx-Mp-Hai" firstAttribute="firstBaseline" secondItem="ScM-IZ-fmb" secondAttribute="firstBaseline" id="75D-Ry-toc"/>
+                                                    <constraint firstItem="nmx-Mp-Hai" firstAttribute="baseline" secondItem="ScM-IZ-fmb" secondAttribute="baseline" id="7rb-EV-YlA"/>
+                                                    <constraint firstItem="qbL-sI-c4F" firstAttribute="baseline" secondItem="FM0-o5-zc8" secondAttribute="baseline" id="8BN-gF-Lz7"/>
+                                                    <constraint firstItem="qbL-sI-c4F" firstAttribute="baseline" secondItem="Lpd-oW-bwO" secondAttribute="baseline" id="9iS-1p-OaH"/>
+                                                    <constraint firstItem="qbL-sI-c4F" firstAttribute="baseline" secondItem="1fd-Sl-cOq" secondAttribute="baseline" id="ECB-4B-tp8"/>
+                                                    <constraint firstItem="nmx-Mp-Hai" firstAttribute="firstBaseline" secondItem="Lpd-oW-bwO" secondAttribute="firstBaseline" id="GX8-f9-Td7"/>
+                                                    <constraint firstItem="qbL-sI-c4F" firstAttribute="baseline" secondItem="ScM-IZ-fmb" secondAttribute="baseline" id="Gcc-ow-SB2"/>
+                                                    <constraint firstItem="qbL-sI-c4F" firstAttribute="firstBaseline" secondItem="ScM-IZ-fmb" secondAttribute="firstBaseline" id="GuQ-rv-kQr"/>
+                                                    <constraint firstItem="1fd-Sl-cOq" firstAttribute="baseline" secondItem="nmx-Mp-Hai" secondAttribute="baseline" id="JEl-0T-3yO"/>
+                                                    <constraint firstItem="nmx-Mp-Hai" firstAttribute="firstBaseline" secondItem="qbL-sI-c4F" secondAttribute="firstBaseline" id="JfW-XG-xVu"/>
+                                                    <constraint firstItem="FM0-o5-zc8" firstAttribute="baseline" secondItem="Lpd-oW-bwO" secondAttribute="baseline" id="KM2-zL-Mlc"/>
+                                                    <constraint firstItem="FM0-o5-zc8" firstAttribute="firstBaseline" secondItem="1fd-Sl-cOq" secondAttribute="firstBaseline" id="KSU-fY-a4n"/>
+                                                    <constraint firstItem="1fd-Sl-cOq" firstAttribute="baseline" secondItem="Lpd-oW-bwO" secondAttribute="baseline" id="KoN-7x-ted"/>
+                                                    <constraint firstItem="nmx-Mp-Hai" firstAttribute="firstBaseline" secondItem="FM0-o5-zc8" secondAttribute="firstBaseline" id="QpH-rw-1gC"/>
+                                                    <constraint firstItem="1fd-Sl-cOq" firstAttribute="firstBaseline" secondItem="nmx-Mp-Hai" secondAttribute="firstBaseline" id="RPq-KA-pGC"/>
+                                                    <constraint firstItem="FM0-o5-zc8" firstAttribute="firstBaseline" secondItem="qbL-sI-c4F" secondAttribute="firstBaseline" id="TGE-78-c0J"/>
+                                                    <constraint firstItem="qbL-sI-c4F" firstAttribute="firstBaseline" secondItem="1fd-Sl-cOq" secondAttribute="firstBaseline" id="d8F-75-CAV"/>
+                                                    <constraint firstItem="FM0-o5-zc8" firstAttribute="baseline" secondItem="ScM-IZ-fmb" secondAttribute="baseline" id="dm9-O1-knA"/>
+                                                    <constraint firstItem="FM0-o5-zc8" firstAttribute="baseline" secondItem="1fd-Sl-cOq" secondAttribute="baseline" id="ehc-km-vOQ"/>
+                                                    <constraint firstItem="FM0-o5-zc8" firstAttribute="firstBaseline" secondItem="ScM-IZ-fmb" secondAttribute="firstBaseline" id="eqD-Ib-2vN"/>
+                                                    <constraint firstItem="ScM-IZ-fmb" firstAttribute="firstBaseline" secondItem="1fd-Sl-cOq" secondAttribute="firstBaseline" id="hfW-sC-EmL"/>
+                                                    <constraint firstItem="ScM-IZ-fmb" firstAttribute="baseline" secondItem="Lpd-oW-bwO" secondAttribute="baseline" id="i6g-09-y1H"/>
+                                                    <constraint firstItem="ScM-IZ-fmb" firstAttribute="firstBaseline" secondItem="Lpd-oW-bwO" secondAttribute="firstBaseline" id="kaD-fw-zl3"/>
+                                                    <constraint firstItem="nmx-Mp-Hai" firstAttribute="baseline" secondItem="qbL-sI-c4F" secondAttribute="baseline" id="oRH-xN-umg"/>
+                                                    <constraint firstItem="qbL-sI-c4F" firstAttribute="firstBaseline" secondItem="Lpd-oW-bwO" secondAttribute="firstBaseline" id="p2U-e3-U1k"/>
+                                                    <constraint firstItem="ScM-IZ-fmb" firstAttribute="baseline" secondItem="1fd-Sl-cOq" secondAttribute="baseline" id="s6T-jN-6nY"/>
+                                                    <constraint firstItem="1fd-Sl-cOq" firstAttribute="firstBaseline" secondItem="Lpd-oW-bwO" secondAttribute="firstBaseline" id="xkx-k7-OID"/>
+                                                    <constraint firstItem="nmx-Mp-Hai" firstAttribute="baseline" secondItem="FM0-o5-zc8" secondAttribute="baseline" id="zv4-K9-FnH"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vrO-rn-Cdh">
+                                                <rect key="frame" x="59" y="224" width="160" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHw-vD-GF2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="yFT-cr-nYy"/>
+                                                            <constraint firstAttribute="height" constant="20" id="yb0-RW-bYU"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dL0-IR-jhD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuP-57-ITo">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="Lzt-08-Wsb"/>
+                                                            <constraint firstAttribute="height" constant="20" id="YPQ-JU-8SX"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b7g-Pg-0Bd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnV-NG-VcF">
+                                                        <rect key="frame" x="56" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="pSn-RJ-df4"/>
+                                                            <constraint firstAttribute="width" constant="20" id="wCW-ix-zTA"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCQ-GZ-88f"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9j-D0-hPx">
+                                                        <rect key="frame" x="84" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="6YO-ai-gTo"/>
+                                                            <constraint firstAttribute="height" constant="20" id="7Ad-hp-AJl"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lza-bb-9hY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkc-1d-uQt">
+                                                        <rect key="frame" x="112" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="tNz-UG-QuB"/>
+                                                            <constraint firstAttribute="height" constant="20" id="ykn-mI-Qwu"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="trs-Wq-M3h"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xi-6t-oh4">
+                                                        <rect key="frame" x="140" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="2Bd-tY-zQY"/>
+                                                            <constraint firstAttribute="width" constant="20" id="A5R-8U-Au1"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XaO-bN-fe6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="YuP-57-ITo" firstAttribute="firstBaseline" secondItem="LnV-NG-VcF" secondAttribute="firstBaseline" id="0Ny-J9-Fdn"/>
+                                                    <constraint firstItem="Nkc-1d-uQt" firstAttribute="firstBaseline" secondItem="4xi-6t-oh4" secondAttribute="firstBaseline" id="1MP-dU-uTX"/>
+                                                    <constraint firstItem="Nkc-1d-uQt" firstAttribute="baseline" secondItem="WHw-vD-GF2" secondAttribute="baseline" id="2EC-qo-ZpH"/>
+                                                    <constraint firstItem="LnV-NG-VcF" firstAttribute="firstBaseline" secondItem="4xi-6t-oh4" secondAttribute="firstBaseline" id="6Hx-sA-azO"/>
+                                                    <constraint firstItem="W9j-D0-hPx" firstAttribute="firstBaseline" secondItem="Nkc-1d-uQt" secondAttribute="firstBaseline" id="ABp-R2-bF7"/>
+                                                    <constraint firstItem="YuP-57-ITo" firstAttribute="baseline" secondItem="LnV-NG-VcF" secondAttribute="baseline" id="D2r-Oa-APf"/>
+                                                    <constraint firstItem="LnV-NG-VcF" firstAttribute="baseline" secondItem="Nkc-1d-uQt" secondAttribute="baseline" id="E2D-On-bvg"/>
+                                                    <constraint firstItem="LnV-NG-VcF" firstAttribute="baseline" secondItem="W9j-D0-hPx" secondAttribute="baseline" id="Fee-Wx-s0O"/>
+                                                    <constraint firstItem="YuP-57-ITo" firstAttribute="firstBaseline" secondItem="4xi-6t-oh4" secondAttribute="firstBaseline" id="Hla-29-mbC"/>
+                                                    <constraint firstItem="WHw-vD-GF2" firstAttribute="firstBaseline" secondItem="YuP-57-ITo" secondAttribute="firstBaseline" id="K4C-5c-Ha9"/>
+                                                    <constraint firstItem="WHw-vD-GF2" firstAttribute="baseline" secondItem="4xi-6t-oh4" secondAttribute="baseline" id="Nqy-Xo-aZa"/>
+                                                    <constraint firstItem="W9j-D0-hPx" firstAttribute="baseline" secondItem="Nkc-1d-uQt" secondAttribute="baseline" id="O8k-ub-DfV"/>
+                                                    <constraint firstItem="LnV-NG-VcF" firstAttribute="firstBaseline" secondItem="Nkc-1d-uQt" secondAttribute="firstBaseline" id="QqT-I7-X5n"/>
+                                                    <constraint firstItem="YuP-57-ITo" firstAttribute="baseline" secondItem="W9j-D0-hPx" secondAttribute="baseline" id="RHG-8c-hZJ"/>
+                                                    <constraint firstItem="4xi-6t-oh4" firstAttribute="baseline" secondItem="LnV-NG-VcF" secondAttribute="baseline" id="SF2-aJ-trt"/>
+                                                    <constraint firstItem="W9j-D0-hPx" firstAttribute="firstBaseline" secondItem="4xi-6t-oh4" secondAttribute="firstBaseline" id="T0Z-6F-WGb"/>
+                                                    <constraint firstItem="LnV-NG-VcF" firstAttribute="firstBaseline" secondItem="W9j-D0-hPx" secondAttribute="firstBaseline" id="TQY-LV-YUn"/>
+                                                    <constraint firstItem="YuP-57-ITo" firstAttribute="baseline" secondItem="4xi-6t-oh4" secondAttribute="baseline" id="XhN-Z1-d8V"/>
+                                                    <constraint firstItem="Nkc-1d-uQt" firstAttribute="baseline" secondItem="4xi-6t-oh4" secondAttribute="baseline" id="a7J-0M-e5b"/>
+                                                    <constraint firstItem="YuP-57-ITo" firstAttribute="firstBaseline" secondItem="Nkc-1d-uQt" secondAttribute="firstBaseline" id="dSm-su-Eez"/>
+                                                    <constraint firstItem="WHw-vD-GF2" firstAttribute="baseline" secondItem="YuP-57-ITo" secondAttribute="baseline" id="jmi-D1-mZL"/>
+                                                    <constraint firstItem="YuP-57-ITo" firstAttribute="firstBaseline" secondItem="W9j-D0-hPx" secondAttribute="firstBaseline" id="kTP-EW-wUd"/>
+                                                    <constraint firstItem="W9j-D0-hPx" firstAttribute="baseline" secondItem="WHw-vD-GF2" secondAttribute="baseline" id="mtl-cF-AKh"/>
+                                                    <constraint firstItem="WHw-vD-GF2" firstAttribute="firstBaseline" secondItem="W9j-D0-hPx" secondAttribute="firstBaseline" id="pBc-3v-okA"/>
+                                                    <constraint firstItem="YuP-57-ITo" firstAttribute="baseline" secondItem="Nkc-1d-uQt" secondAttribute="baseline" id="pGk-Qe-l0X"/>
+                                                    <constraint firstItem="WHw-vD-GF2" firstAttribute="baseline" secondItem="LnV-NG-VcF" secondAttribute="baseline" id="seV-xR-TbU"/>
+                                                    <constraint firstItem="WHw-vD-GF2" firstAttribute="firstBaseline" secondItem="LnV-NG-VcF" secondAttribute="firstBaseline" id="tQF-ak-BAw"/>
+                                                    <constraint firstItem="Nkc-1d-uQt" firstAttribute="firstBaseline" secondItem="WHw-vD-GF2" secondAttribute="firstBaseline" id="wiu-vr-KaI"/>
+                                                    <constraint firstItem="WHw-vD-GF2" firstAttribute="firstBaseline" secondItem="4xi-6t-oh4" secondAttribute="firstBaseline" id="xDx-HE-xmr"/>
+                                                    <constraint firstItem="4xi-6t-oh4" firstAttribute="baseline" secondItem="W9j-D0-hPx" secondAttribute="baseline" id="zZ6-IK-bvI"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IdY-30-icp">
+                                                <rect key="frame" x="10" y="56" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANF-d2-6xa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="Y8y-Xd-hsy"/>
+                                                            <constraint firstAttribute="height" constant="20" id="m5D-yi-uwP"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvG-Jp-iCB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQv-dw-s60">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="5Ag-Wh-3zV"/>
+                                                            <constraint firstAttribute="width" constant="20" id="PcH-QC-UsB"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRp-P5-EJc"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="ANF-d2-6xa" firstAttribute="baseline" secondItem="mQv-dw-s60" secondAttribute="baseline" id="9EN-At-9kb"/>
+                                                    <constraint firstItem="ANF-d2-6xa" firstAttribute="firstBaseline" secondItem="mQv-dw-s60" secondAttribute="firstBaseline" id="b1Q-Ks-M5W"/>
+                                                    <constraint firstItem="ANF-d2-6xa" firstAttribute="firstBaseline" secondItem="mQv-dw-s60" secondAttribute="firstBaseline" id="gBd-Z2-MDL"/>
+                                                    <constraint firstItem="ANF-d2-6xa" firstAttribute="baseline" secondItem="mQv-dw-s60" secondAttribute="baseline" id="puR-1u-NH2"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CgS-HK-MYX">
+                                                <rect key="frame" x="10" y="84" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ5-Yt-k3U">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="eyx-hH-QxO"/>
+                                                            <constraint firstAttribute="height" constant="20" id="m8x-w4-GHk"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="40Y-iW-QL1"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVN-7f-d3E">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="INI-0k-wzE"/>
+                                                            <constraint firstAttribute="height" constant="20" id="UAT-JU-UNb"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oBS-hP-L0S"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="fJ5-Yt-k3U" firstAttribute="firstBaseline" secondItem="lVN-7f-d3E" secondAttribute="firstBaseline" id="8VZ-uZ-aYI"/>
+                                                    <constraint firstItem="lVN-7f-d3E" firstAttribute="baseline" secondItem="fJ5-Yt-k3U" secondAttribute="baseline" id="YcG-gt-dKL"/>
+                                                    <constraint firstItem="lVN-7f-d3E" firstAttribute="firstBaseline" secondItem="fJ5-Yt-k3U" secondAttribute="firstBaseline" id="dsn-dX-e3G"/>
+                                                    <constraint firstItem="fJ5-Yt-k3U" firstAttribute="baseline" secondItem="lVN-7f-d3E" secondAttribute="baseline" id="meu-o1-l95"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lH2-WI-X6T">
+                                                <rect key="frame" x="10" y="112" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fv-5u-Ndv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="OeO-5K-xSF"/>
+                                                            <constraint firstAttribute="width" constant="20" id="VME-ei-1xB"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MPF-nl-8Nf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAh-Nd-pQb">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="gvx-nq-cw8"/>
+                                                            <constraint firstAttribute="width" constant="20" id="zw0-Ux-038"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIv-BB-ErJ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="TAh-Nd-pQb" firstAttribute="baseline" secondItem="3Fv-5u-Ndv" secondAttribute="baseline" id="BaG-ru-Dsr"/>
+                                                    <constraint firstItem="TAh-Nd-pQb" firstAttribute="firstBaseline" secondItem="3Fv-5u-Ndv" secondAttribute="firstBaseline" id="FDt-Ad-CLH"/>
+                                                    <constraint firstItem="3Fv-5u-Ndv" firstAttribute="firstBaseline" secondItem="TAh-Nd-pQb" secondAttribute="firstBaseline" id="Vaj-H7-vlD"/>
+                                                    <constraint firstItem="3Fv-5u-Ndv" firstAttribute="baseline" secondItem="TAh-Nd-pQb" secondAttribute="baseline" id="eNr-60-YIQ"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wh0-ua-GZL">
+                                                <rect key="frame" x="10" y="140" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5L-QL-Jy1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="NQu-Rv-DGg"/>
+                                                            <constraint firstAttribute="width" constant="20" id="ra0-mh-C52"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9B-qG-7pw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGa-Ob-5ER">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="KMX-0G-DrN"/>
+                                                            <constraint firstAttribute="height" constant="20" id="zEE-c3-fql"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNd-Lk-Rdp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="p5L-QL-Jy1" firstAttribute="baseline" secondItem="SGa-Ob-5ER" secondAttribute="baseline" id="48I-qT-Cd1"/>
+                                                    <constraint firstItem="SGa-Ob-5ER" firstAttribute="firstBaseline" secondItem="p5L-QL-Jy1" secondAttribute="firstBaseline" id="Wm9-xh-h9G"/>
+                                                    <constraint firstItem="SGa-Ob-5ER" firstAttribute="firstBaseline" secondItem="p5L-QL-Jy1" secondAttribute="firstBaseline" id="X6w-db-hXh"/>
+                                                    <constraint firstItem="p5L-QL-Jy1" firstAttribute="baseline" secondItem="SGa-Ob-5ER" secondAttribute="baseline" id="oc2-bD-87Y"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mgx-Hq-hBz">
+                                                <rect key="frame" x="10" y="168" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw2-dz-B59">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="JCr-e3-RJZ"/>
+                                                            <constraint firstAttribute="height" constant="20" id="bl1-Cp-6t6"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYv-z5-2t9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8o-kO-sJw">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="fdF-SC-w0p"/>
+                                                            <constraint firstAttribute="width" constant="20" id="gIa-ex-jfo"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mm5-Cp-bfS"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="uw2-dz-B59" firstAttribute="firstBaseline" secondItem="v8o-kO-sJw" secondAttribute="firstBaseline" id="MOr-8q-yfq"/>
+                                                    <constraint firstItem="uw2-dz-B59" firstAttribute="baseline" secondItem="v8o-kO-sJw" secondAttribute="baseline" id="gap-be-otQ"/>
+                                                    <constraint firstItem="uw2-dz-B59" firstAttribute="firstBaseline" secondItem="v8o-kO-sJw" secondAttribute="firstBaseline" id="jeo-yB-6iJ"/>
+                                                    <constraint firstItem="uw2-dz-B59" firstAttribute="baseline" secondItem="v8o-kO-sJw" secondAttribute="baseline" id="lOK-Hj-kEg"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e8V-ke-G6s">
+                                                <rect key="frame" x="10" y="196" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zx-c2-0nW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="O9u-vS-Q63"/>
+                                                            <constraint firstAttribute="width" constant="20" id="gub-RQ-FXf"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hi7-os-hEy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWB-NJ-rQn">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="3bR-6z-RO3"/>
+                                                            <constraint firstAttribute="height" constant="20" id="deE-bA-Eny"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNR-7q-h4A"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="8Zx-c2-0nW" firstAttribute="firstBaseline" secondItem="rWB-NJ-rQn" secondAttribute="firstBaseline" id="0Nz-lc-RFl"/>
+                                                    <constraint firstItem="8Zx-c2-0nW" firstAttribute="baseline" secondItem="rWB-NJ-rQn" secondAttribute="baseline" id="DBd-Sg-fas"/>
+                                                    <constraint firstItem="8Zx-c2-0nW" firstAttribute="baseline" secondItem="rWB-NJ-rQn" secondAttribute="baseline" id="KFl-i7-DyM"/>
+                                                    <constraint firstItem="8Zx-c2-0nW" firstAttribute="firstBaseline" secondItem="rWB-NJ-rQn" secondAttribute="firstBaseline" id="QyY-fR-eca"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ajl-8w-www">
+                                                <rect key="frame" x="10" y="224" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-Pt-DVR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="5YH-E5-wjB"/>
+                                                            <constraint firstAttribute="height" constant="20" id="oFt-6Y-Y0y"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aW0-k3-W0f"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOQ-QE-K99">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="5RT-db-G1L"/>
+                                                            <constraint firstAttribute="height" constant="20" id="Ye6-Fc-xlW"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kno-vc-iFW"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="1pc-Pt-DVR" firstAttribute="baseline" secondItem="dOQ-QE-K99" secondAttribute="baseline" id="0LS-Ki-ZFE"/>
+                                                    <constraint firstItem="1pc-Pt-DVR" firstAttribute="firstBaseline" secondItem="dOQ-QE-K99" secondAttribute="firstBaseline" id="A12-uS-Daf"/>
+                                                    <constraint firstItem="1pc-Pt-DVR" firstAttribute="firstBaseline" secondItem="dOQ-QE-K99" secondAttribute="firstBaseline" id="TEv-mW-a3q"/>
+                                                    <constraint firstItem="dOQ-QE-K99" firstAttribute="baseline" secondItem="1pc-Pt-DVR" secondAttribute="baseline" id="yDY-oG-8I1"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iR6-h1-98D">
+                                                <rect key="frame" x="210" y="56" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sP1-W2-foB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="ktb-d2-dYt"/>
+                                                            <constraint firstAttribute="width" constant="20" id="qlp-P7-maU"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUv-DQ-UPy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ier-5o-Cin">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="Hxo-b2-jqa"/>
+                                                            <constraint firstAttribute="height" constant="20" id="d37-Ol-MTY"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQQ-0t-FUZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="sP1-W2-foB" firstAttribute="firstBaseline" secondItem="ier-5o-Cin" secondAttribute="firstBaseline" id="E5O-o5-Ktr"/>
+                                                    <constraint firstItem="sP1-W2-foB" firstAttribute="firstBaseline" secondItem="ier-5o-Cin" secondAttribute="firstBaseline" id="GaA-Wv-txs"/>
+                                                    <constraint firstItem="sP1-W2-foB" firstAttribute="baseline" secondItem="ier-5o-Cin" secondAttribute="baseline" id="WSI-EI-PQZ"/>
+                                                    <constraint firstItem="ier-5o-Cin" firstAttribute="baseline" secondItem="sP1-W2-foB" secondAttribute="baseline" id="Xu1-23-fF0"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="w5K-JP-kGC">
+                                                <rect key="frame" x="210" y="84" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dR-Vh-OoG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="4f7-r8-gLy"/>
+                                                            <constraint firstAttribute="width" constant="20" id="mkB-tS-aQh"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nmd-KD-L0E"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeI-m1-zgm">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="omG-cr-iMO"/>
+                                                            <constraint firstAttribute="width" constant="20" id="thm-ov-dHB"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nsy-Za-9iS"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="1dR-Vh-OoG" firstAttribute="baseline" secondItem="GeI-m1-zgm" secondAttribute="baseline" id="BWM-8U-PzS"/>
+                                                    <constraint firstItem="GeI-m1-zgm" firstAttribute="firstBaseline" secondItem="1dR-Vh-OoG" secondAttribute="firstBaseline" id="OVM-MQ-d4V"/>
+                                                    <constraint firstItem="1dR-Vh-OoG" firstAttribute="baseline" secondItem="GeI-m1-zgm" secondAttribute="baseline" id="oVc-xc-sFw"/>
+                                                    <constraint firstItem="1dR-Vh-OoG" firstAttribute="firstBaseline" secondItem="GeI-m1-zgm" secondAttribute="firstBaseline" id="trA-ny-O3H"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="W0j-50-BKj">
+                                                <rect key="frame" x="210" y="112" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nag-Bm-nWh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="hOP-0s-dae"/>
+                                                            <constraint firstAttribute="height" constant="20" id="ztL-G4-OHv"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aE9-Ar-2iD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICW-6T-Wga">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="9M6-Gn-ZEA"/>
+                                                            <constraint firstAttribute="height" constant="20" id="dqm-ly-V6o"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06p-Xz-TxC"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="ICW-6T-Wga" firstAttribute="baseline" secondItem="Nag-Bm-nWh" secondAttribute="baseline" id="50G-J6-0VQ"/>
+                                                    <constraint firstItem="Nag-Bm-nWh" firstAttribute="firstBaseline" secondItem="ICW-6T-Wga" secondAttribute="firstBaseline" id="Ybi-Wh-y1E"/>
+                                                    <constraint firstItem="ICW-6T-Wga" firstAttribute="firstBaseline" secondItem="Nag-Bm-nWh" secondAttribute="firstBaseline" id="cbK-hx-60B"/>
+                                                    <constraint firstItem="Nag-Bm-nWh" firstAttribute="baseline" secondItem="ICW-6T-Wga" secondAttribute="baseline" id="iW9-lh-ARW"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vEt-QR-rbj">
+                                                <rect key="frame" x="210" y="140" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cN-fu-nnh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="Cms-kG-Axc"/>
+                                                            <constraint firstAttribute="width" constant="20" id="K8R-jT-iVx"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZc-10-OFf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBI-eH-M59">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="H5L-7j-HcC"/>
+                                                            <constraint firstAttribute="height" constant="20" id="yob-ie-nCZ"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="da6-XM-bOR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="2cN-fu-nnh" firstAttribute="baseline" secondItem="rBI-eH-M59" secondAttribute="baseline" id="93B-Nc-FMG"/>
+                                                    <constraint firstItem="rBI-eH-M59" firstAttribute="firstBaseline" secondItem="2cN-fu-nnh" secondAttribute="firstBaseline" id="EKT-C5-enE"/>
+                                                    <constraint firstItem="rBI-eH-M59" firstAttribute="baseline" secondItem="2cN-fu-nnh" secondAttribute="baseline" id="KEz-1i-kcn"/>
+                                                    <constraint firstItem="2cN-fu-nnh" firstAttribute="firstBaseline" secondItem="rBI-eH-M59" secondAttribute="firstBaseline" id="Kdm-IL-Jpz"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LHK-U8-J7S">
+                                                <rect key="frame" x="210" y="168" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcb-cA-BxL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="eRZ-wb-jcq"/>
+                                                            <constraint firstAttribute="width" constant="20" id="hSr-fo-6MI"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqX-Qf-IhD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU7-TS-J3m">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="22E-cM-68r"/>
+                                                            <constraint firstAttribute="height" constant="20" id="uLZ-2e-AMX"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Irq-iH-2dV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="Wcb-cA-BxL" firstAttribute="firstBaseline" secondItem="RU7-TS-J3m" secondAttribute="firstBaseline" id="GfD-oA-2up"/>
+                                                    <constraint firstItem="Wcb-cA-BxL" firstAttribute="baseline" secondItem="RU7-TS-J3m" secondAttribute="baseline" id="LK4-Ub-azv"/>
+                                                    <constraint firstItem="Wcb-cA-BxL" firstAttribute="firstBaseline" secondItem="RU7-TS-J3m" secondAttribute="firstBaseline" id="ZjR-oQ-h8N"/>
+                                                    <constraint firstItem="Wcb-cA-BxL" firstAttribute="baseline" secondItem="RU7-TS-J3m" secondAttribute="baseline" id="gM3-Zk-Ckv"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7nc-ru-Gcc">
+                                                <rect key="frame" x="210" y="196" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Db-9I-IAx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="mqa-Cc-Fh3"/>
+                                                            <constraint firstAttribute="width" constant="20" id="nPd-d6-arn"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w38-pJ-OqI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMv-gw-qFg">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="XAD-tL-566"/>
+                                                            <constraint firstAttribute="height" constant="20" id="vJb-eL-S2F"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQc-9s-hBc"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="0Db-9I-IAx" firstAttribute="firstBaseline" secondItem="zMv-gw-qFg" secondAttribute="firstBaseline" id="9Vx-z3-vlf"/>
+                                                    <constraint firstItem="0Db-9I-IAx" firstAttribute="baseline" secondItem="zMv-gw-qFg" secondAttribute="baseline" id="Idb-t7-9Jw"/>
+                                                    <constraint firstItem="0Db-9I-IAx" firstAttribute="baseline" secondItem="zMv-gw-qFg" secondAttribute="baseline" id="RH3-G3-2Qg"/>
+                                                    <constraint firstItem="0Db-9I-IAx" firstAttribute="firstBaseline" secondItem="zMv-gw-qFg" secondAttribute="firstBaseline" id="fBM-DT-zJv"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qai-Uz-0ua">
+                                                <rect key="frame" x="210" y="224" width="48" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIg-lB-hCw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="Q3s-bZ-QW4"/>
+                                                            <constraint firstAttribute="width" constant="20" id="dJq-tJ-ZqZ"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JV8-pP-yZz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJi-U7-oDk">
+                                                        <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="YPA-bm-PcO"/>
+                                                            <constraint firstAttribute="width" constant="20" id="zuD-3S-wSG"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="seatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WfB-Bz-o0X"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="bIg-lB-hCw" firstAttribute="baseline" secondItem="oJi-U7-oDk" secondAttribute="baseline" id="4RX-Qp-k4R"/>
+                                                    <constraint firstItem="bIg-lB-hCw" firstAttribute="firstBaseline" secondItem="oJi-U7-oDk" secondAttribute="firstBaseline" id="Boo-MA-gmF"/>
+                                                    <constraint firstItem="bIg-lB-hCw" firstAttribute="firstBaseline" secondItem="oJi-U7-oDk" secondAttribute="firstBaseline" id="U5L-NP-Im3"/>
+                                                    <constraint firstItem="oJi-U7-oDk" firstAttribute="baseline" secondItem="bIg-lB-hCw" secondAttribute="baseline" id="UN9-c2-l3T"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="u2C-Ky-O89" firstAttribute="top" secondItem="ixi-VP-GMd" secondAttribute="bottom" constant="8" id="1N9-n2-eON"/>
+                                            <constraint firstItem="oKK-jX-F94" firstAttribute="leading" secondItem="4hc-4D-oAj" secondAttribute="leading" id="3Yw-h0-zUi"/>
+                                            <constraint firstItem="7nc-ru-Gcc" firstAttribute="top" secondItem="LHK-U8-J7S" secondAttribute="bottom" constant="8" id="65k-KB-ZR6"/>
+                                            <constraint firstItem="e8V-ke-G6s" firstAttribute="leading" secondItem="Mgx-Hq-hBz" secondAttribute="leading" id="6IR-XG-e7Y"/>
+                                            <constraint firstItem="Mgx-Hq-hBz" firstAttribute="leading" secondItem="wh0-ua-GZL" secondAttribute="leading" id="7TK-YZ-IQu"/>
+                                            <constraint firstItem="u2C-Ky-O89" firstAttribute="leading" secondItem="ixi-VP-GMd" secondAttribute="leading" id="CVL-2V-HDg"/>
+                                            <constraint firstItem="w5K-JP-kGC" firstAttribute="top" secondItem="iR6-h1-98D" secondAttribute="bottom" constant="8" id="CX4-mq-YJo"/>
+                                            <constraint firstItem="IdY-30-icp" firstAttribute="leading" secondItem="P7k-82-3ib" secondAttribute="leading" id="EWK-Sw-R1Y"/>
+                                            <constraint firstItem="IdY-30-icp" firstAttribute="top" secondItem="P7k-82-3ib" secondAttribute="bottom" constant="8" id="H4H-Uo-NpV"/>
+                                            <constraint firstItem="Ajl-8w-www" firstAttribute="leading" secondItem="e8V-ke-G6s" secondAttribute="leading" id="HQ3-8k-HxQ"/>
+                                            <constraint firstItem="7nc-ru-Gcc" firstAttribute="leading" secondItem="LHK-U8-J7S" secondAttribute="leading" id="KuM-tA-AUu"/>
+                                            <constraint firstItem="P7k-82-3ib" firstAttribute="top" secondItem="Iew-fC-fgG" secondAttribute="top" constant="28" id="L2X-OC-Vte"/>
+                                            <constraint firstItem="P7k-82-3ib" firstAttribute="leading" secondItem="Iew-fC-fgG" secondAttribute="leading" constant="10" id="MFS-OE-tqN"/>
+                                            <constraint firstItem="vrO-rn-Cdh" firstAttribute="top" secondItem="T1W-PK-Keg" secondAttribute="bottom" constant="8" id="MjO-3T-cTa"/>
+                                            <constraint firstItem="vEt-QR-rbj" firstAttribute="top" secondItem="W0j-50-BKj" secondAttribute="bottom" constant="8" id="Oem-vJ-r2w"/>
+                                            <constraint firstItem="T1W-PK-Keg" firstAttribute="leading" secondItem="u2C-Ky-O89" secondAttribute="leading" id="P6e-zI-5a8"/>
+                                            <constraint firstItem="lH2-WI-X6T" firstAttribute="top" secondItem="CgS-HK-MYX" secondAttribute="bottom" constant="8" id="Pmu-x4-1hk"/>
+                                            <constraint firstItem="wh0-ua-GZL" firstAttribute="top" secondItem="lH2-WI-X6T" secondAttribute="bottom" constant="8" id="QAe-fv-PEj"/>
+                                            <constraint firstItem="CgS-HK-MYX" firstAttribute="top" secondItem="IdY-30-icp" secondAttribute="bottom" constant="8" id="SPC-zW-1Nj"/>
+                                            <constraint firstItem="Mgx-Hq-hBz" firstAttribute="top" secondItem="wh0-ua-GZL" secondAttribute="bottom" constant="8" id="VcF-lr-JXR"/>
+                                            <constraint firstItem="sP1-W2-foB" firstAttribute="top" secondItem="xew-jR-rfg" secondAttribute="bottom" constant="8" id="Y2D-wT-wuM"/>
+                                            <constraint firstItem="noQ-12-NAH" firstAttribute="top" secondItem="oKK-jX-F94" secondAttribute="bottom" constant="8" id="aRN-hw-d55"/>
+                                            <constraint firstItem="28G-Yb-Lrf" firstAttribute="top" secondItem="noQ-12-NAH" secondAttribute="bottom" constant="8" id="ajv-3N-laC"/>
+                                            <constraint firstItem="Qai-Uz-0ua" firstAttribute="top" secondItem="7nc-ru-Gcc" secondAttribute="bottom" constant="8" id="ao5-ET-1QG"/>
+                                            <constraint firstItem="CgS-HK-MYX" firstAttribute="leading" secondItem="IdY-30-icp" secondAttribute="leading" id="bWn-Zf-B7J"/>
+                                            <constraint firstItem="Ajl-8w-www" firstAttribute="top" secondItem="e8V-ke-G6s" secondAttribute="bottom" constant="8" id="cGS-Oa-lTY"/>
+                                            <constraint firstItem="Qai-Uz-0ua" firstAttribute="leading" secondItem="7nc-ru-Gcc" secondAttribute="leading" id="dLc-yZ-qiU"/>
+                                            <constraint firstItem="wh0-ua-GZL" firstAttribute="leading" secondItem="lH2-WI-X6T" secondAttribute="leading" id="e09-yT-2Qb"/>
+                                            <constraint firstItem="LHK-U8-J7S" firstAttribute="leading" secondItem="vEt-QR-rbj" secondAttribute="leading" id="fQh-bX-fZe"/>
+                                            <constraint firstItem="vEt-QR-rbj" firstAttribute="leading" secondItem="W0j-50-BKj" secondAttribute="leading" id="fb4-io-PZo"/>
+                                            <constraint firstItem="W0j-50-BKj" firstAttribute="leading" secondItem="w5K-JP-kGC" secondAttribute="leading" id="hRS-KM-v6c"/>
+                                            <constraint firstItem="ixi-VP-GMd" firstAttribute="leading" secondItem="28G-Yb-Lrf" secondAttribute="leading" id="hcS-ng-Uo5"/>
+                                            <constraint firstAttribute="height" constant="272" id="iDN-2w-LUf"/>
+                                            <constraint firstItem="vrO-rn-Cdh" firstAttribute="leading" secondItem="T1W-PK-Keg" secondAttribute="leading" id="kCh-HE-SMq"/>
+                                            <constraint firstItem="xew-jR-rfg" firstAttribute="top" secondItem="Iew-fC-fgG" secondAttribute="top" constant="28" id="lDT-dL-t1U"/>
+                                            <constraint firstItem="28G-Yb-Lrf" firstAttribute="leading" secondItem="noQ-12-NAH" secondAttribute="leading" id="las-ry-ZJn"/>
+                                            <constraint firstItem="LHK-U8-J7S" firstAttribute="top" secondItem="vEt-QR-rbj" secondAttribute="bottom" constant="8" id="nb8-Oa-9we"/>
+                                            <constraint firstItem="T1W-PK-Keg" firstAttribute="top" secondItem="u2C-Ky-O89" secondAttribute="bottom" constant="8" id="ng7-Me-klX"/>
+                                            <constraint firstItem="xew-jR-rfg" firstAttribute="top" secondItem="4hc-4D-oAj" secondAttribute="top" id="oGl-5B-XD1"/>
+                                            <constraint firstItem="oKK-jX-F94" firstAttribute="top" secondItem="4hc-4D-oAj" secondAttribute="bottom" constant="8" id="ofr-eI-GK3"/>
+                                            <constraint firstItem="sP1-W2-foB" firstAttribute="leading" secondItem="xew-jR-rfg" secondAttribute="leading" id="ox9-9k-xBA"/>
+                                            <constraint firstItem="4hc-4D-oAj" firstAttribute="centerX" secondItem="Iew-fC-fgG" secondAttribute="centerX" constant="5" id="r4N-0I-FfH"/>
+                                            <constraint firstAttribute="trailing" secondItem="xew-jR-rfg" secondAttribute="trailing" constant="10" id="srR-Ta-7Qo"/>
+                                            <constraint firstItem="W0j-50-BKj" firstAttribute="top" secondItem="w5K-JP-kGC" secondAttribute="bottom" constant="8" id="tfj-Pq-awX"/>
+                                            <constraint firstItem="noQ-12-NAH" firstAttribute="leading" secondItem="oKK-jX-F94" secondAttribute="leading" id="u1Q-8E-7LH"/>
+                                            <constraint firstItem="ixi-VP-GMd" firstAttribute="top" secondItem="28G-Yb-Lrf" secondAttribute="bottom" constant="8" id="v0H-Ad-PRE"/>
+                                            <constraint firstItem="e8V-ke-G6s" firstAttribute="top" secondItem="Mgx-Hq-hBz" secondAttribute="bottom" constant="8" id="vJE-qP-Jvp"/>
+                                            <constraint firstItem="w5K-JP-kGC" firstAttribute="leading" secondItem="iR6-h1-98D" secondAttribute="leading" id="x1N-wU-ydA"/>
+                                            <constraint firstItem="lH2-WI-X6T" firstAttribute="leading" secondItem="CgS-HK-MYX" secondAttribute="leading" id="xJ3-rL-naL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Iew-fC-fgG" firstAttribute="top" secondItem="moh-xm-XtX" secondAttribute="top" constant="140" id="Gbz-56-mxU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Iew-fC-fgG" secondAttribute="trailing" id="lYA-Fa-Jdh"/>
+                                    <constraint firstItem="Iew-fC-fgG" firstAttribute="leading" secondItem="moh-xm-XtX" secondAttribute="leading" id="vmb-dS-bl0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.74509803921568629" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9YO-zi-whW" firstAttribute="top" secondItem="moh-xm-XtX" secondAttribute="bottom" constant="70" id="JIl-qS-fYf"/>
+                            <constraint firstItem="moh-xm-XtX" firstAttribute="top" secondItem="IQP-fO-dMe" secondAttribute="bottom" constant="50" id="atK-yk-IXl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="moh-xm-XtX" secondAttribute="trailing" constant="10" id="hSo-dk-bcL"/>
+                            <constraint firstItem="moh-xm-XtX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="uNT-Og-VFC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cinemaView" destination="moh-xm-XtX" id="9Y0-bd-a3r"/>
+                        <outlet property="seatView" destination="Iew-fC-fgG" id="Jse-kn-DAB"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="192" y="320"/>
+        </scene>
+    </scenes>
+</document>

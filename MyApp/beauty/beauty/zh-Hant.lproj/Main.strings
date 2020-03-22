@@ -1,0 +1,18 @@
+/* Class = "UILabel"; text = "Beauties"; ObjectID = "FNZ-lx-aCh"; */
+"FNZ-lx-aCh.text" = "Beauties";
+
+/* Class = "UITabBarItem"; title = "Korean"; ObjectID = "OUa-l6-1MP"; */
+"OUa-l6-1MP.title" = "Korean";
+
+/* Class = "UITabBarItem"; title = "Japanese"; ObjectID = "PbJ-8i-088"; */
+"PbJ-8i-088.title" = "Japanese";
+
+/* Class = "UIBarButtonItem"; title = "Share"; ObjectID = "Skw-cD-KOk"; */
+"Skw-cD-KOk.title" = "Share";
+
+/* Class = "UITabBarItem"; title = "Chinese"; ObjectID = "iKt-fz-ti0"; */
+"iKt-fz-ti0.title" = "Chinese";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "xnQ-mL-4Hf"; */
+"xnQ-mL-4Hf.normalTitle" = "Submit";
+

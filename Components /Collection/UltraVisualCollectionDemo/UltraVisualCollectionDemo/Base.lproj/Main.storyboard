@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qbm-Mo-JY6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ultra Visual Controller-->
+        <scene sceneID="IeZ-eK-e1i">
+            <objects>
+                <collectionViewController id="qbm-Mo-JY6" customClass="UltraVisualController" customModule="UltraVisualCollectionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="0Wi-jI-3s6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n8e-bq-Fxy" customClass="MyLayout" customModule="UltraVisualCollectionDemo" customModuleProvider="target">
+                            <size key="itemSize" width="209" height="184"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="awP-F6-0VM" customClass="CollectionViewCell" customModule="UltraVisualCollectionDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="209" height="184"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-01" translatesAutoresizingMaskIntoConstraints="NO" id="WIX-Z3-kCY">
+                                            <rect key="frame" x="0.0" y="0.0" width="209" height="184"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="184" id="MuS-59-OWE"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view alpha="0.5499999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTc-Ng-VgG">
+                                            <rect key="frame" x="0.0" y="0.0" width="209" height="184"/>
+                                            <animations/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life is struggle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcv-3j-mb7">
+                                            <rect key="frame" x="8" y="70" width="193" height="45"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="NmR-7L-d0e"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="qcv-3j-mb7" firstAttribute="leading" secondItem="awP-F6-0VM" secondAttribute="leadingMargin" id="1Q4-lQ-Nrn"/>
+                                    <constraint firstAttribute="centerY" secondItem="WIX-Z3-kCY" secondAttribute="centerY" id="AhD-yz-gq0"/>
+                                    <constraint firstItem="YTc-Ng-VgG" firstAttribute="top" secondItem="awP-F6-0VM" secondAttribute="topMargin" constant="-8" id="Bb0-AJ-u0b"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="YTc-Ng-VgG" secondAttribute="trailing" constant="-8" id="FAB-kD-cjy"/>
+                                    <constraint firstItem="YTc-Ng-VgG" firstAttribute="leading" secondItem="awP-F6-0VM" secondAttribute="leadingMargin" constant="-8" id="ObP-d9-bfl"/>
+                                    <constraint firstItem="qcv-3j-mb7" firstAttribute="trailing" secondItem="awP-F6-0VM" secondAttribute="trailingMargin" id="SzG-vE-xJR"/>
+                                    <constraint firstAttribute="centerY" secondItem="qcv-3j-mb7" secondAttribute="centerY" constant="-0.5" id="Zi2-eV-bWJ"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="WIX-Z3-kCY" secondAttribute="trailing" constant="-8" id="dJ9-A0-wAI"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="YTc-Ng-VgG" secondAttribute="bottom" constant="-8" id="hDn-o2-lnU"/>
+                                    <constraint firstItem="WIX-Z3-kCY" firstAttribute="leading" secondItem="awP-F6-0VM" secondAttribute="leadingMargin" constant="-8" id="s5V-8u-ueg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="coverView" destination="YTc-Ng-VgG" id="j8u-Op-lMI"/>
+                                    <outlet property="imageView" destination="WIX-Z3-kCY" id="LYz-Cj-Adh"/>
+                                    <outlet property="titleLabel" destination="qcv-3j-mb7" id="vMx-8g-vzC"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="qbm-Mo-JY6" id="qIw-75-KGp"/>
+                            <outlet property="delegate" destination="qbm-Mo-JY6" id="m7i-1D-2n7"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WlN-zo-zOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="227" y="314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img-01" width="2447" height="2447"/>
+    </resources>
+</document>

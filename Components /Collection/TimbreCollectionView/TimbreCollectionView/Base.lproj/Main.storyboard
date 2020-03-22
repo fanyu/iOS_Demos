@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="grB-Wd-xXy">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Collection View Controller-->
+        <scene sceneID="sDq-bn-DKX">
+            <objects>
+                <collectionViewController id="grB-Wd-xXy" customClass="MyCollectionViewController" customModule="TimbreCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="cIg-LM-pG2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="R5H-sw-kXz" customClass="MyLayout" customModule="TimbreCollectionView" customModuleProvider="target">
+                            <size key="itemSize" width="249" height="233"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="wch-i4-p7K" customClass="MyCollectionViewCell" customModule="TimbreCollectionView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="249" height="233"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="249" height="233"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQI-O8-0pv" userLabel="ContainerView">
+                                            <rect key="frame" x="-32" y="8" width="313" height="217"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-01" translatesAutoresizingMaskIntoConstraints="NO" id="uUP-EG-U6A">
+                                                    <rect key="frame" x="0.0" y="9" width="313" height="200"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="oa6-9z-VyX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vn-80-PY3" userLabel="GradientView" customClass="GradientView" customModule="TimbreCollectionView" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="313" height="217"/>
+                                                    <animations/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="uUP-EG-U6A" secondAttribute="centerY" id="1t3-zd-w47"/>
+                                                <constraint firstAttribute="bottom" secondItem="8vn-80-PY3" secondAttribute="bottom" id="PQW-dV-Osr"/>
+                                                <constraint firstItem="8vn-80-PY3" firstAttribute="leading" secondItem="xQI-O8-0pv" secondAttribute="leading" id="TCS-UE-OEl"/>
+                                                <constraint firstAttribute="trailing" secondItem="8vn-80-PY3" secondAttribute="trailing" id="Uc9-wT-PnB"/>
+                                                <constraint firstItem="8vn-80-PY3" firstAttribute="top" secondItem="xQI-O8-0pv" secondAttribute="top" id="UgY-UZ-ydF"/>
+                                                <constraint firstAttribute="trailing" secondItem="uUP-EG-U6A" secondAttribute="trailing" id="bpU-oe-lhC"/>
+                                                <constraint firstItem="uUP-EG-U6A" firstAttribute="leading" secondItem="xQI-O8-0pv" secondAttribute="leading" id="rpW-LX-69C"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZy-bE-gUT">
+                                            <rect key="frame" x="8" y="8" width="233" height="30"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="CZy-bE-gUT" firstAttribute="leading" secondItem="wch-i4-p7K" secondAttribute="leadingMargin" id="8L3-NF-5GC"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="xQI-O8-0pv" secondAttribute="bottom" id="9dr-XB-BCw"/>
+                                    <constraint firstItem="CZy-bE-gUT" firstAttribute="trailing" secondItem="wch-i4-p7K" secondAttribute="trailingMargin" id="QQs-kj-eaC"/>
+                                    <constraint firstItem="xQI-O8-0pv" firstAttribute="top" secondItem="wch-i4-p7K" secondAttribute="topMargin" id="fRG-zF-5XC"/>
+                                    <constraint firstItem="xQI-O8-0pv" firstAttribute="leading" secondItem="wch-i4-p7K" secondAttribute="leadingMargin" constant="-40" id="hFE-VP-lGo"/>
+                                    <constraint firstItem="CZy-bE-gUT" firstAttribute="top" secondItem="wch-i4-p7K" secondAttribute="topMargin" id="myp-eo-1zX"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="xQI-O8-0pv" secondAttribute="trailing" constant="-40" id="nRW-Rm-Oy2"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="backgroundImage" destination="uUP-EG-U6A" id="FDB-e0-vpx"/>
+                                    <outlet property="imageViewCenterYLayoutConstaint" destination="1t3-zd-w47" id="E6O-XS-dQu"/>
+                                    <outlet property="nameLabel" destination="CZy-bE-gUT" id="dIx-z0-f3m"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="grB-Wd-xXy" id="bEv-Km-4oR"/>
+                            <outlet property="delegate" destination="grB-Wd-xXy" id="hb8-DR-eHe"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5J-um-NeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="359" y="377"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img-01" width="2447" height="2447"/>
+    </resources>
+</document>

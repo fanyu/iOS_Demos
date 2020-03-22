@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIStackViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FqT-v3-Bfl">
+                                <rect key="frame" x="0.0" y="50" width="600" height="406"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="How do you like me?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62R-fc-mwc">
+                                        <rect key="frame" x="222" y="0.0" width="157" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="PWt-e0-vx1">
+                                        <rect key="frame" x="146" y="51" width="308" height="245"/>
+                                        <animations/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRb-R2-9ud">
+                                        <rect key="frame" x="256" y="326" width="89" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="F9p-4x-CV7">
+                                        <rect key="frame" x="192" y="376" width="217" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnN-oN-CMf">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Add"/>
+                                                <connections>
+                                                    <action selector="addStarTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUC-jk-uol"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roI-jT-PgP">
+                                                <rect key="frame" x="80" y="0.0" width="32" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Hide"/>
+                                                <connections>
+                                                    <action selector="hideTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cyo-tG-h5P"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvV-yK-fhL">
+                                                <rect key="frame" x="162" y="0.0" width="55" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Remove"/>
+                                                <connections>
+                                                    <action selector="removeStarTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gwp-pi-Kop"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8cl-OR-V83">
+                                <rect key="frame" x="20" y="480" width="560" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="R3P-nD-h2A">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="100"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="xM6-9J-G0p"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FqT-v3-Bfl" secondAttribute="trailing" constant="-20" id="6rF-Cy-oeQ"/>
+                            <constraint firstItem="FqT-v3-Bfl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="9Im-hE-S1x"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8cl-OR-V83" secondAttribute="bottom" constant="20" id="NNA-7s-xGT"/>
+                            <constraint firstItem="8cl-OR-V83" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fgY-Cf-Cym"/>
+                            <constraint firstItem="8cl-OR-V83" firstAttribute="top" secondItem="FqT-v3-Bfl" secondAttribute="bottom" constant="24" id="hnY-fn-YaN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8cl-OR-V83" secondAttribute="trailing" id="ile-4u-ucD"/>
+                            <constraint firstItem="FqT-v3-Bfl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="mmv-GU-LPd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1LZ-pK-DhF"/>
+                    <connections>
+                        <outlet property="helloLabel" destination="vRb-R2-9ud" id="H3B-Il-mMH"/>
+                        <outlet property="horizontalStackView" destination="8cl-OR-V83" id="G2J-4p-3Co"/>
+                        <outlet property="verticalStackView" destination="FqT-v3-Bfl" id="bA4-nS-l2Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="343"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="308" height="321"/>
+        <image name="star" width="128" height="128"/>
+    </resources>
+</document>
